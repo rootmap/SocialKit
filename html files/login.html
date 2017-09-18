@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
+
+    <title>dostums </title>
+
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+    <link href="assets/material/css/roboto.min.css" rel="stylesheet">
+    <link href="assets/material/css/material.min.css" rel="stylesheet">
+    <link href="assets/material/css/ripples.min.css" rel="stylesheet">
+    <link href="assets/material/dropdownjs/jquery.dropdown.css" rel="stylesheet">
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+
+    <!-- main stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="assets/js/custom.modernizr.js"></script>
+    <script>
+        paceOptions = {
+            elements: true
+        };
+    </script>
+
+</head>
+<body class="home">
+<header>
+    <div class="header-wrapper">
+
+        <div class="header-nav">
+            <div class="navbar navbar-default navbar-site  navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-collapse"><span class="icon-bar"></span> <span
+                                class="icon-bar"></span> <span class="icon-bar"></span></button>
+                        <a class="navbar-brand" href="index.html"><img src="images/dostums-logo.png" alt="dostums ">
+                        </a></div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li>
+                                <div id="custom-search-input">
+                                    <div class="input-group col-md-12">
+                                        <input type="text" class="  search-query form-control" placeholder="Search"/>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button">
+                                        <span class=" fa fa-search"></span>
+                                    </button>
+                                </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#">Home </a>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle count-info">
+                                    <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-messages">
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a class="pull-left" href="profile.html">
+                                                <img src="images/user/user.jpg" class="img-circle" alt="image">
+                                            </a>
+
+
+                                            <div class="media-body">
+                                                <small class="pull-right msg-date">46h ago</small>
+                                                <strong>anisurrahman </strong> and <strong>3</strong> others followed
+                                                you. <br>
+                                                <small class="text-muted">2 days ago at 8:40 pm - 28.06.2015</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a class="pull-left" href="profile.html">
+                                                <img src="images/user/user2.jpg" class="img-circle" alt="image">
+                                            </a>
+
+                                            <div class="media-body ">
+                                                <small class="pull-right msg-date text-brand">5h ago</small>
+                                                <strong>Remaining Silent</strong> It's really ending. <br>
+                                                <small class="text-muted">Yesterday 2:30 pm - 24.06.2015</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a class="pull-left" href="profile.html">
+                                                <img src="images/user/default-user-picture.gif" class="img-circle"
+                                                     alt="image">
+                                            </a>
+
+                                            <div class="media-body ">
+                                                <small class="pull-right msg-date">14h ago</small>
+                                                <strong>Tom Faltesek </strong>, <strong>Damiano Fusco</strong> favorited
+                                                your <strong> Tweets</strong>. <br>
+                                                <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="text-center link-block">
+                                            <a href="mailbox.html">
+                                                <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle count-info">
+                                    <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-alerts dropdown-messages">
+                                    <li><a href="mailbox.html">
+                                        <div class="dropdown-messages-box">
+
+                                            <div class="media-body ">
+                                                <small class="pull-right text-muted msg-date">12 minutes ago</small>
+                                                <strong>MD Rubel</strong> asked to join <strong>'JOKES HOUSE'</strong>
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                    </li>
+                                    <li class="divider"></li>
+
+                                    <li><a href="mailbox.html">
+                                        <div class="dropdown-messages-box">
+
+                                            <div class="media-body ">
+                                                <small class="pull-right text-muted msg-date">18 minutes ago</small>
+                                                <strong>Md Sayemour Rahman SaYem</strong> commented on your photo.
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                    </li>
+
+                                    <li class="divider"></li>
+
+
+                                    <li>
+                                        <a href="mailbox.html">
+                                            <div>
+                                                <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                                <span class="pull-right text-muted small">4 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="profile.html">
+                                            <div>
+                                                <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                                <span class="pull-right text-muted small">12 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="grid_options.html">
+                                            <div>
+                                                <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                                <span class="pull-right text-muted small">4 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="text-center link-block">
+                                            <a href="notifications.html">
+                                                <strong>See All Alerts</strong>
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tanim Ahmed <span
+                                        class="fa fa-user "></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Account Settings <span class="fa fa-gear pull-right"></span></a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">User stats <span class="fa fa-gears pull-right"></span></a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Messages <span class="badge pull-right"> 42 </span></a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Favourites Post <span class="fa fa-heart pull-right"></span></a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Sign Out <span class="fa fa-sign-out pull-right"></span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                        <!-- /.navbar-right -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="main-container page-container section-padd page-login">
+
+    <div class="container front-card">
+
+        <div class="row">
+
+            <div class="col-sm-6">
+                <div class="front-welcome-text front-welcome-text-login">
+                    <h1>Welcome to Dostums.</h1>
+
+                    <p>Connect with your friends &mdash; and other fascinating people. Get in-the-moment updates on the
+                        things that interest you. And watch events unfold, in real time, from every angle.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+
+                <div class="logged-container">
+                    <div class="login-box from-box-wrapper">
+
+                        <div class="main">
+
+                            <h3>Please <a class="signin-toggle active">Log In</a>, or <a class="signup-toggle">Sign
+                                Up</a></h3>
+
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <a href="#" class="btn  btn-primary btn-block">Facebook</a>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <a href="#" class="btn  btn-info btn-block">Google</a>
+                                </div>
+                            </div>
+                            <div class="login-or">
+                                <hr class="hr-or">
+                                <span class="span-or">or</span>
+                            </div>
+
+                            <form role="form" id="form-signin" class="active">
+                                <div class="form-group">
+                                    <label for="inputUsernameEmail">Username or email</label>
+                                    <input type="text" class="form-control" id="inputUsernameEmail">
+                                </div>
+                                <div class="form-group">
+                                    <a class="pull-right" href="#">Forgot password?</a>
+                                    <label for="inputPassword">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword">
+                                </div>
+                                <div class="checkbox pull-right">
+                                    <label>
+                                        <input type="checkbox">
+                                        Remember me </label>
+                                </div>
+                                <button type="submit" class="btn btn btn-primary">
+                                    Log In
+                                </button>
+                            </form>
+
+                            <form role="form" id="form-signup" class="">
+
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="first_name">First name</label>
+                                            <input type="text" name="first_name" id="first_name" class="form-control "
+                                                   tabindex="1">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="last_name">Last name</label>
+                                            <input type="text" name="last_name" id="last_name" class="form-control "
+                                                   tabindex="2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="display_name">Display Name</label>
+                                    <input type="text" name="display_name" id="display_name" class="form-control "
+                                           tabindex="3">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" name="email" id="email" class="form-control " tabindex="4">
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="Password">Password</label>
+                                            <input type="password" name="password" id="password" class="form-control "
+                                                   tabindex="5">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label for="password_confirmation">Confirm Password</label>
+                                            <input type="password" name="password_confirmation"
+                                                   id="password_confirmation" class="form-control "
+                                                   placeholder="Confirm Password" tabindex="6">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group  col-xs-12 no-paading">
+                                            <div class="checkbox pull-left">
+                                                <label>
+                                                    <input type="checkbox">
+                                                    Agree with terms </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn btn-primary">
+                                    Sign up
+                                </button>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+</div>
+
+<footer>
+    <div class="footer-bottom">
+        <div class="container text-center">
+            <p class="pull-left hide">
+                Copyright © 2015 dostums Inc. All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/material/dropdownjs/jquery.dropdown.js"></script>
+<script src="assets/material/js/ripples.min.js"></script>
+<script src="assets/material/js/material.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // This command is used to initialize some elements and make them work properly
+        $.material.init();
+        $(".select").dropdown({"autoinit": ".select"});
+    });
+</script>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>

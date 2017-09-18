@@ -1,0 +1,60 @@
+
+body {
+
+  background: #E8ECED;
+  background: #eaeaea;
+  color: @textPrimaryColor;
+  font-family: @base-font;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto Condensed;
+  margin-top: 0;
+  color: @textPrimaryColor;
+
+}
+
+hr.site {
+  height: 2px;
+  background: #dae0e2;
+}
+
+/*
+a {
+	color: #2A3744;
+	outline: 0;
+	transition: all 0.2s linear 0s, letter-spacing 0s linear 0s;
+	-webkit-transition: all 0.2s linear 0s, letter-spacing 0s linear 0s;
+}
+
+a:focus, a:hover, a:active {
+	outline: none;
+	text-decoration: none;
+	color: #E24E60;
+}
+*/
+a {
+  color: @linkColor;
+  outline: 0;
+  transition: all 0.2s linear 0s, letter-spacing 0s linear 0s;
+  -webkit-transition: all 0.2s linear 0s, letter-spacing 0s linear 0s;
+
+  &:hover, &:active, &:focus {
+    color: @linkColorHover;
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+nav, .navbar {
+  a {
+
+  }
+
+}

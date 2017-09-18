@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
+
+    <title>dostums </title>
+
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+    <link href="assets/material/css/roboto.min.css" rel="stylesheet">
+    <link href="assets/material/css/material.min.css" rel="stylesheet">
+    <link href="assets/material/css/ripples.min.css" rel="stylesheet">
+    <link href="assets/material/dropdownjs/jquery.dropdown.css" rel="stylesheet">
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+    <!-- jQuery (custom scroll plugins) -->
+    <script src="http://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
+    <link href="http://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+
+
+    <!-- jQuery (fullcalendar  plugins) -->
+    <script src="http://fullcalendar.io/js/fullcalendar-2.4.0/lib/moment.min.js"></script>
+    <script src="http://fullcalendar.io/js/fullcalendar-2.4.0/fullcalendar.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.4.0/fullcalendar.min.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.4.0/fullcalendar.print.css" rel="stylesheet">
+
+
+    <link href="assets/plugins/modal-library/mikes-modal.css" rel="stylesheet">
+    <script src="assets/plugins/modal-library/mikes-modal.min.js" type="text/javascript"></script>
+    <script>
+        jQuery(function () {
+            $(".open-demo-modal").click(function (e) {
+                e.preventDefault();
+                $("#myModal").mikesModal();
+            });
+        });
+    </script>
+
+    <!-- main stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="assets/js/custom.modernizr.js"></script>
+    <script>
+        paceOptions = {
+            elements: true
+        };
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="header-wrapper">
+        <div class="header-nav">
+            <div class="navbar navbar-default navbar-site  navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-collapse"><span class="icon-bar"></span> <span
+                                class="icon-bar"></span> <span class="icon-bar"></span></button>
+                        <a class="navbar-brand" href="index.html"><img src="images/dostums-logo.png" alt="dostums ">
+                        </a></div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li>
+                                <div id="custom-search-input">
+                                    <div class="input-group col-md-12">
+                                        <input type="text" class="  search-query form-control" placeholder="Search"/>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button">
+                                        <span class=" fa fa-search"></span>
+                                    </button>
+                                </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#">Home </a>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle count-info">
+                                    <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-messages">
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a class="pull-left" href="profile.html">
+                                                <img src="images/user/user.jpg" class="img-circle" alt="image">
+                                            </a>
+
+
+                                            <div class="media-body">
+                                                <small class="pull-right msg-date">46h ago</small>
+                                                <strong>anisurrahman </strong> and <strong>3</strong> others followed
+                                                you. <br>
+                                                <small class="text-muted">2 days ago at 8:40 pm - 28.06.2015</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a class="pull-left" href="profile.html">
+                                                <img src="images/user/user2.jpg" class="img-circle" alt="image">
+                                            </a>
+
+                                            <div class="media-body ">
+                                                <small class="pull-right msg-date text-brand">5h ago</small>
+                                                <strong>Remaining Silent</strong> It's really ending. <br>
+                                                <small class="text-muted">Yesterday 2:30 pm - 24.06.2015</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a class="pull-left" href="profile.html">
+                                                <img src="images/user/default-user-picture.gif" class="img-circle"
+                                                     alt="image">
+                                            </a>
+
+                                            <div class="media-body ">
+                                                <small class="pull-right msg-date">14h ago</small>
+                                                <strong>Tom Faltesek </strong>, <strong>Damiano Fusco</strong> favorited
+                                                your <strong> Tweets</strong>. <br>
+                                                <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="text-center link-block">
+                                            <a href="mailbox.html">
+                                                <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle count-info">
+                                    <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-alerts dropdown-messages">
+                                    <li><a href="mailbox.html">
+                                        <div class="dropdown-messages-box">
+
+                                            <div class="media-body ">
+                                                <small class="pull-right text-muted msg-date">12 minutes ago</small>
+                                                <strong>MD Rubel</strong> asked to join <strong>'JOKES HOUSE'</strong>
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                    </li>
+                                    <li class="divider"></li>
+
+                                    <li><a href="mailbox.html">
+                                        <div class="dropdown-messages-box">
+
+                                            <div class="media-body ">
+                                                <small class="pull-right text-muted msg-date">18 minutes ago</small>
+                                                <strong>Md Sayemour Rahman SaYem</strong> commented on your photo.
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                    </li>
+
+                                    <li class="divider"></li>
+
+
+                                    <li>
+                                        <a href="mailbox.html">
+                                            <div>
+                                                <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                                <span class="pull-right text-muted small">4 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="profile.html">
+                                            <div>
+                                                <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                                <span class="pull-right text-muted small">12 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="grid_options.html">
+                                            <div>
+                                                <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                                <span class="pull-right text-muted small">4 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="text-center link-block">
+                                            <a href="notifications.html">
+                                                <strong>See All Alerts</strong>
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tanim Ahmed <span
+                                        class="fa fa-user "></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Account Settings <span class="fa fa-gear pull-right"></span></a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">User stats <span class="fa fa-gears pull-right"></span></a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Messages <span class="badge pull-right"> 42 </span></a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Favourites Post <span class="fa fa-heart pull-right"></span></a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Sign Out <span class="fa fa-sign-out pull-right"></span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                        <!-- /.navbar-right -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main-container page-container section-padd">
+    <div class="container-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12"><h4 class="pull-left page-title"><i class="mdi-action-settings"></i> settings
+                    <span class="sub-text"> Manage My Profile  </span></h4>
+                    <ol class="breadcrumb pull-right">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Setting</a></li>
+                        <li class="active">Privacy</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 ">
+
+                    <div class="panel panel-default">
+                        <div class="panel-body p-0">
+                            <div class="list-group mail-list">
+                                <a href="#" class="list-group-item no-border active"><i
+                                    class="mdi-action-settings-applications"></i>General </a>
+                                <a href="#" class="list-group-item no-border"><i
+                                    class="mdi-hardware-security"></i>Security </a>
+                                <hr class="lihr">
+                                <a href="#" class="list-group-item no-border"><i class="mdi-content-block"></i>Blocking
+                                </a> <a href="#" class="list-group-item no-border"><i
+                                        class="mdi-social-notifications"></i>Notifications </a>
+                                <a href="#"     class="list-group-item no-border"><i
+                                        class="mdi-social-people"></i>Followers
+                                    <b>(354)</b></a>
+                                <hr class="lihr">
+                                <a href="#"     class="list-group-item no-border"><i
+                                        class="mdi-action-assignment"></i>Ads
+                                    <b>(354)</b></a>
+
+                                <a href="#"     class="list-group-item no-border"><i
+                                        class="mdi-action-payment"></i>Payments
+                                   </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9">
+
+                        <div class="panel ">
+                            <div class="panel-heading">
+                                <h4 class="pull-left"> <i class="mdi-action-perm-media"></i> Photos </h4>
+
+
+                                <div class="panel-tools pull-right">
+
+                                    <div class="panel-search hide" style="display: block;">
+                                        <input type="text" class="search-input" placeholder="Start typing..." >
+                                        <i class="search-close">×</i>
+                                    </div>
+
+                                    <ul class="panel-actions actions">
+                                        <li>
+                                            <a class="panel-search-trigger" href="">
+                                                <i class="mdi-action-search"></i>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="">
+                                                <i class="mdi-content-add"></i> Create Album
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="mdi-image-photo"></i> Add Photos
+                                            </a>
+                                        </li>
+
+
+
+                                        <li class="dropdown">
+                                            <a aria-expanded="true" data-toggle="dropdown" href="">
+                                                <i class="mdi-content-sort"></i> Sort by
+                                            </a>
+
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Last Modified</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Last Edited</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Name</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Date</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown">
+                                            <a aria-expanded="false" data-toggle="dropdown" href="">
+                                                <i class="mdi-editor-mode-edit"></i>  Manage
+                                            </a>
+
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li>
+                                                    <a href="">Refresh</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Listview Settings</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+
+
+
+
+                                </div>    <div style="clear: both"></div>
+                            </div>
+                            <div class="panel-body">
+
+
+
+                                <div id="photo-content" style="clear:both;" class="row">
+
+                                    <div class="col-lg-12">
+
+
+
+                                        <ul id="photo-grid" class="photo-grid list-unstyled col-lg-12 no-padding">
+                                            <li>
+
+                                                <div class="image-action">
+
+
+                                                    <div class="dropdown dropdown-right-alight">
+                    <span data-toggle="dropdown" type="button" class="dropdown-toggle mini-btn" aria-expanded="false">
+                        <span class=" mdi-action-settings "></span>
+                    </span>
+                                                        <ul role="menu" class="dropdown-menu">
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Edit Title </a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Add Location</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Change Date</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Turn off
+                                                                notifications</a></li>
+                                                            <li class="divider" role="presentation"></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Hide from
+                                                                Timeline</a></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Delete This Photo
+                                                                </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-info">
+                                                    <div class="share-panel">
+                                                        <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                            likes</a>
+                                                        <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i> 14
+                                                            comments</a>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="image-box open-demo-modal">  <img src="assets/plugins/Wookmark-jQuery-master/sample-images/image_2.jpg" > </div>
+
+
+
+                                            </li>
+                                            <li>
+
+                                                <div class="image-action">
+
+
+                                                    <div class="dropdown dropdown-right-alight">
+                    <span data-toggle="dropdown" type="button" class="dropdown-toggle mini-btn" aria-expanded="false">
+                        <span class=" mdi-action-settings "></span>
+                    </span>
+                                                        <ul role="menu" class="dropdown-menu">
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Edit Title </a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Add Location</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Change Date</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Turn off
+                                                                notifications</a></li>
+                                                            <li class="divider" role="presentation"></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Hide from
+                                                                Timeline</a></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Delete This Photo
+                                                            </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-info">
+                                                    <div class="share-panel">
+                                                        <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                            likes</a>
+                                                        <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i> 14
+                                                            comments</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-box">  <img src="assets/plugins/Wookmark-jQuery-master/sample-images/image_3.jpg" ></div></li>
+                                            <li>
+
+                                                <div class="image-action">
+
+
+                                                    <div class="dropdown dropdown-right-alight">
+                    <span data-toggle="dropdown" type="button" class="dropdown-toggle mini-btn" aria-expanded="false">
+                        <span class=" mdi-action-settings "></span>
+                    </span>
+                                                        <ul role="menu" class="dropdown-menu">
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Edit Title </a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Add Location</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Change Date</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Turn off
+                                                                notifications</a></li>
+                                                            <li class="divider" role="presentation"></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Hide from
+                                                                Timeline</a></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Delete This Photo
+                                                            </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-info">
+                                                    <div class="share-panel">
+                                                        <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                            likes</a>
+                                                        <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i> 14
+                                                            comments</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-box"> <img src="assets/plugins/Wookmark-jQuery-master/sample-images/image_9.jpg"></li>
+                                            <li>
+
+                                                <div class="image-action">
+
+
+                                                    <div class="dropdown dropdown-right-alight">
+                    <span data-toggle="dropdown" type="button" class="dropdown-toggle mini-btn" aria-expanded="false">
+                        <span class=" mdi-action-settings "></span>
+                    </span>
+                                                        <ul role="menu" class="dropdown-menu">
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Edit Title </a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Add Location</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Change Date</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Turn off
+                                                                notifications</a></li>
+                                                            <li class="divider" role="presentation"></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Hide from
+                                                                Timeline</a></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Delete This Photo
+                                                            </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-info">
+                                                    <div class="share-panel">
+                                                        <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                            likes</a>
+                                                        <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i> 14
+                                                            comments</a>
+                                                    </div>
+                                                </div>
+                                                <div class="image-box"> <img src="assets/plugins/Wookmark-jQuery-master/sample-images/image_10.jpg" ></div></li>
+                                            <li>
+
+                                                <div class="image-action">
+
+
+                                                    <div class="dropdown dropdown-right-alight">
+                    <span data-toggle="dropdown" type="button" class="dropdown-toggle mini-btn" aria-expanded="false">
+                        <span class=" mdi-action-settings "></span>
+                    </span>
+                                                        <ul role="menu" class="dropdown-menu">
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Edit Title </a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Add Location</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Change Date</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Turn off
+                                                                notifications</a></li>
+                                                            <li class="divider" role="presentation"></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Hide from
+                                                                Timeline</a></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Delete This Photo
+                                                            </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-info">
+                                                    <div class="share-panel">
+                                                        <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                            likes</a>
+                                                        <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i> 14
+                                                            comments</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-box"><img src="assets/plugins/Wookmark-jQuery-master/sample-images/image_1.jpg" ></div></li>
+                                            <li>
+
+                                                <div class="image-action">
+
+
+                                                    <div class="dropdown dropdown-right-alight">
+                    <span data-toggle="dropdown" type="button" class="dropdown-toggle mini-btn" aria-expanded="false">
+                        <span class=" mdi-action-settings "></span>
+                    </span>
+                                                        <ul role="menu" class="dropdown-menu">
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Edit Title </a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Add Location</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Change Date</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Turn off
+                                                                notifications</a></li>
+                                                            <li class="divider" role="presentation"></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Hide from
+                                                                Timeline</a></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Delete This Photo
+                                                            </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-info">
+                                                    <div class="share-panel">
+                                                        <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                            likes</a>
+                                                        <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i> 14
+                                                            comments</a>
+                                                    </div>
+                                                </div>
+                                                <div class="image-box">
+                                                    <img src="assets/plugins/Wookmark-jQuery-master/sample-images/image_2.jpg" ></div></li>
+                                            <li>
+
+                                                <div class="image-action">
+
+
+                                                    <div class="dropdown dropdown-right-alight">
+                    <span data-toggle="dropdown" type="button" class="dropdown-toggle mini-btn" aria-expanded="false">
+                        <span class=" mdi-action-settings "></span>
+                    </span>
+                                                        <ul role="menu" class="dropdown-menu">
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Edit Title </a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Add Location</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Change Date</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Turn off
+                                                                notifications</a></li>
+                                                            <li class="divider" role="presentation"></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Hide from
+                                                                Timeline</a></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Delete This Photo
+                                                            </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-info">
+                                                    <div class="share-panel">
+                                                        <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                            likes</a>
+                                                        <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i> 14
+                                                            comments</a>
+                                                    </div>
+                                                </div>
+                                                <div class="image-box"> <img src="assets/plugins/Wookmark-jQuery-master/sample-images/image_3.jpg"></div>
+                                            </li>
+                                            <li>
+
+                                                <div class="image-action">
+
+
+                                                    <div class="dropdown dropdown-right-alight">
+                    <span data-toggle="dropdown" type="button" class="dropdown-toggle mini-btn" aria-expanded="false">
+                        <span class=" mdi-action-settings "></span>
+                    </span>
+                                                        <ul role="menu" class="dropdown-menu">
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Edit Title </a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Add Location</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Change Date</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Turn off
+                                                                notifications</a></li>
+                                                            <li class="divider" role="presentation"></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Hide from
+                                                                Timeline</a></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Delete This Photo
+                                                            </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-info">
+                                                    <div class="share-panel">
+                                                        <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                            likes</a>
+                                                        <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i> 14
+                                                            comments</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-box"><img src="assets/plugins/Wookmark-jQuery-master/sample-images/image_1.jpg" ></div></li>
+                                            <li>
+
+                                                <div class="image-action">
+
+
+                                                    <div class="dropdown dropdown-right-alight">
+                    <span data-toggle="dropdown" type="button" class="dropdown-toggle mini-btn" aria-expanded="false">
+                        <span class=" mdi-action-settings "></span>
+                    </span>
+                                                        <ul role="menu" class="dropdown-menu">
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Edit Title </a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Add Location</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Change Date</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Turn off
+                                                                notifications</a></li>
+                                                            <li class="divider" role="presentation"></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Hide from
+                                                                Timeline</a></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Delete This Photo
+                                                            </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-info">
+                                                    <div class="share-panel">
+                                                        <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                            likes</a>
+                                                        <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i> 14
+                                                            comments</a>
+                                                    </div>
+                                                </div>
+                                              <div class="image-box">
+                                                  <img src="assets/plugins/Wookmark-jQuery-master/sample-images/image_5.jpg" >
+
+                                              </div>
+                                             </li>
+                                            <li>
+
+                                                <div class="image-action">
+
+
+                                                    <div class="dropdown dropdown-right-alight">
+                    <span data-toggle="dropdown" type="button" class="dropdown-toggle mini-btn" aria-expanded="false">
+                        <span class=" mdi-action-settings "></span>
+                    </span>
+                                                        <ul role="menu" class="dropdown-menu">
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Edit Title </a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Add Location</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Change Date</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Turn off
+                                                                notifications</a></li>
+                                                            <li class="divider" role="presentation"></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Hide from
+                                                                Timeline</a></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Delete This Photo
+                                                            </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-info">
+                                                    <div class="share-panel">
+                                                        <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                            likes</a>
+                                                        <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i> 14
+                                                            comments</a>
+                                                    </div>
+                                                </div>
+                                                <div class="image-box">
+                                                    <img src="assets/plugins/Wookmark-jQuery-master/sample-images/image_6.jpg" ></div></li>
+                                          <li>
+
+                                                <div class="image-action">
+
+
+                                                    <div class="dropdown dropdown-right-alight">
+                    <span data-toggle="dropdown" type="button" class="dropdown-toggle mini-btn" aria-expanded="false">
+                        <span class=" mdi-action-settings "></span>
+                    </span>
+                                                        <ul role="menu" class="dropdown-menu">
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Edit Title </a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Add Location</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Change Date</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Turn off
+                                                                notifications</a></li>
+                                                            <li class="divider" role="presentation"></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Hide from
+                                                                Timeline</a></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Delete This Photo
+                                                            </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-info">
+                                                    <div class="share-panel">
+                                                        <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                            likes</a>
+                                                        <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i> 14
+                                                            comments</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-box">
+                                                    <img src="assets/plugins/Wookmark-jQuery-master/sample-images/image_7.jpg" >
+                                            </div>
+                                            
+                                            </li>
+                                            <li>
+
+
+                                                <div class="image-action">
+
+
+                                                    <div class="dropdown dropdown-right-alight">
+                    <span data-toggle="dropdown" type="button" class="dropdown-toggle mini-btn" aria-expanded="false">
+                        <span class=" mdi-action-settings "></span>
+                    </span>
+                                                        <ul role="menu" class="dropdown-menu">
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Edit Title </a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Add Location</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Change Date</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Turn off
+                                                                notifications</a></li>
+                                                            <li class="divider" role="presentation"></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Hide from
+                                                                Timeline</a></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Delete This Photo
+                                                            </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-info">
+                                                    <div class="share-panel">
+                                                        <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                            likes</a>
+                                                        <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i> 14
+                                                            comments</a>
+                                                    </div>
+                                                </div>
+                                                <div class="image-box">
+                                                    <img src="assets/plugins/Wookmark-jQuery-master/sample-images/image_8.jpg" >
+                                                    </div>
+                                            </li>
+                                            <li>
+
+                                                <div class="image-action">
+
+
+                                                    <div class="dropdown dropdown-right-alight">
+                    <span data-toggle="dropdown" type="button" class="dropdown-toggle mini-btn" aria-expanded="false">
+                        <span class=" mdi-action-settings "></span>
+                    </span>
+                                                        <ul role="menu" class="dropdown-menu">
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Edit Title </a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Add Location</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Change Date</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Turn off
+                                                                notifications</a></li>
+                                                            <li class="divider" role="presentation"></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Hide from
+                                                                Timeline</a></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Delete This Photo
+                                                            </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-info">
+                                                    <div class="share-panel">
+                                                        <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                            likes</a>
+                                                        <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i> 14
+                                                            comments</a>
+                                                    </div>
+                                                </div>
+                                                <div class="image-box">
+
+                                               <img src="assets/plugins/Wookmark-jQuery-master/sample-images/image_9.jpg">  </div></li>
+
+
+                                            <li>
+
+                                                <div class="image-action">
+
+
+                                                    <div class="dropdown dropdown-right-alight">
+                    <span data-toggle="dropdown" type="button" class="dropdown-toggle mini-btn" aria-expanded="false">
+                        <span class=" mdi-action-settings "></span>
+                    </span>
+                                                        <ul role="menu" class="dropdown-menu">
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Edit Title </a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Add Location</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Change Date</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Turn off
+                                                                notifications</a></li>
+                                                            <li class="divider" role="presentation"></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Hide from
+                                                                Timeline</a></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Delete This Photo
+                                                            </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-info">
+                                                    <div class="share-panel">
+                                                        <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                            likes</a>
+                                                        <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i> 14
+                                                            comments</a>
+                                                    </div>
+                                                </div>
+                                                <div class="image-box"> <img src="assets/plugins/Wookmark-jQuery-master/sample-images/image_3.jpg"></div>
+                                            </li>
+                                            <li>
+
+                                                <div class="image-action">
+
+
+                                                    <div class="dropdown dropdown-right-alight">
+                    <span data-toggle="dropdown" type="button" class="dropdown-toggle mini-btn" aria-expanded="false">
+                        <span class=" mdi-action-settings "></span>
+                    </span>
+                                                        <ul role="menu" class="dropdown-menu">
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Edit Title </a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Add Location</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Change Date</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Turn off
+                                                                notifications</a></li>
+                                                            <li class="divider" role="presentation"></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Hide from
+                                                                Timeline</a></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Delete This Photo
+                                                            </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-info">
+                                                    <div class="share-panel">
+                                                        <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                            likes</a>
+                                                        <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i> 14
+                                                            comments</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-box"><img src="assets/plugins/Wookmark-jQuery-master/sample-images/image_1.jpg" ></div></li>
+                                            <li>
+
+                                                <div class="image-action">
+
+
+                                                    <div class="dropdown dropdown-right-alight">
+                    <span data-toggle="dropdown" type="button" class="dropdown-toggle mini-btn" aria-expanded="false">
+                        <span class=" mdi-action-settings "></span>
+                    </span>
+                                                        <ul role="menu" class="dropdown-menu">
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Edit Title </a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Add Location</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Change Date</a>
+                                                            </li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Turn off
+                                                                notifications</a></li>
+                                                            <li class="divider" role="presentation"></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Hide from
+                                                                Timeline</a></li>
+                                                            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Delete This Photo
+                                                            </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="image-info">
+                                                    <div class="share-panel">
+                                                        <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                            likes</a>
+                                                        <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i> 14
+                                                            comments</a>
+                                                    </div>
+                                                </div>
+                                                <div class="image-box">
+                                                    <img src="assets/plugins/Wookmark-jQuery-master/sample-images/image_5.jpg" >
+
+                                                </div>
+                                            </li>
+
+
+                                            <!-- End of grid blocks -->
+                                        </ul>
+
+
+                                    </div>
+
+
+
+
+                                </div>
+
+                                <div style="clear:both;"></div>
+
+
+                            </div>
+
+                            <div class="panel-footer">
+
+                                <nav>
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li>
+                                            <a href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mikes-modal global-modal  " id="myModal">
+        <img src='http://s3.amazonaws.com/ultimate_whip/garage_photos/photos/000/000/079/large/38779594009_original.jpeg?1349826286'>
+
+        <div class="description">
+            <div class="modal-description-inner">
+                <div class='modla-text-area'>
+                    <div class="user-heading">
+                        <img alt="user3" src="images/user/user4.jpg" class="img-circle pull-left  ">
+
+                        <h3>Regina Dealova <span class="text-muted ">with </span> <a class="_3rdUser">Akas
+                            Islam</a>
+                            <span class="text-muted ">and </span> <a class="_3rdUser">9 others</a>
+
+                        </h3>
+                        <h5><span>Shared publicly</span> - <span>Jun 15, 2016</span></h5>
+                    </div>
+                    <div class="modal-info-area">
+                        <p>Put whatever content you need here. I personally used it for comments and tags :)</p>
+
+                        <p>
+                            Lisa Kudrow নামের কাউকে আমি চিনি না
+                            colonthree emoticon </p>
+
+
+                        <p> আমি শুধু চিনি Phoebe Buffay কে ! </p>
+
+                        <p> ফ্রেন্ডস এর ৩ টা ক্যারেক্টার আমার এক্সট্রিম লেভেলের প্রিয় ! চ্যান্ডলার , জোয়ি আর princess
+                            consuela banana hammock !!!
+
+                            মাঝে মাঝে মনে হয় , টিভির অভিনেতারা এতো অবহেলিত হয় ক্যান
+                            colonthree emoticon<br>
+                            !! ফ্রেন্ডস এর পরেও তার উল্লেখযোগ্য কোনো মুভি দেখলাম না
+                            colonthree emoticon<br>
+                            কিছু থাকলেও সব সাইড ক্যারেক্টার
+                            colonthree emoticon </p>
+
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-comments-area">
+                    <div class="panel-bottom">
+                        <div class="panel-footer has-share-panel">
+
+                            <div class="row">
+
+                                <div class="col-sm-12">
+
+                                    <div class="share-panel">
+                                        <a class="sp-like" href="#" title="#"><i class="fa fa-thumbs-up"></i> 26
+                                            likes</a>
+                                        <a class="sp-comments" href="#" title="#"><i class="fa fa-comments"></i>
+                                            14 comments</a>
+                                        <a class="sp-share" href="#" title="#"><i class="fa fa-share"></i> 10
+                                            shares</a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="comments-box has-comments">
+
+                            <div class="all-comments-count">
+                                View 9 more comments
+                                    <span data-toggle="dropdown" type="button" class="dropdown-toggle">
+                                   <span class="glyphicon glyphicon-chevron-down"></span>
+                                   </span>
+                            </div>
+
+                            <div class="comments-list-wrapper">
+                                <ul class="commentList">
+                                    <li>
+                                        <div class="commenterImage">
+                                            <img src="https://lh3.googleusercontent.com/-ll1jsqW_tKI/AAAAAAAAAAI/AAAAAAAAFzk/sxT1miO22bs/s46-c-k-no/photo.jpg">
+                                        </div>
+                                        <div class="commentText">
+                                            <p class=""><strong> <a href="user-profile.html"> Lamia Alonso </a>
+                                            </strong> Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2015</span>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="commenterImage">
+                                            <img src="https://lh3.googleusercontent.com/-A_v3UELYm34/AAAAAAAAAAI/AAAAAAAADOE/APCzKJPAP_8/s46-c-k-no/photo.jpg">
+                                        </div>
+                                        <div class="commentText">
+                                            <p class=""><strong><a href="user-profile.html">Jaspreet Chahal</a>
+                                            </strong> Hello this is a test comment and this comment is
+                                                particularly
+                                                very long and it goes on and on and on.</p> <span class="date sub-text">on March 5th, 2015</span>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="commenterImage">
+                                            <img src="http://lorempixel.com/50/50/people/9">
+                                        </div>
+                                        <div class="commentText">
+                                            <p class=""><strong> <a href="user-profile.html">Lisa Doll</a>
+                                            </strong>
+                                                Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2015</span>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="write-comments ">
+                                <div class="panel-customs-post-textarea">
+                                    <textarea class="form-control" rows="4" placeholder="Add a comment"></textarea>
+                                    <button type="submit" class="btn btn-success btn-shm ">Post comment</button>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p class="pull-left hide">
+                    Copyright © 2015 dostums Inc. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/material/dropdownjs/jquery.dropdown.js"></script>
+    <script src="assets/material/js/ripples.min.js"></script>
+    <script src="assets/material/js/material.min.js"></script>
+
+
+    <script src="assets/js/jquery.scrollto.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/jquery.sticky.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+
+
+
+    <!-- Include the imagesLoaded plug-in -->
+    <script src="assets/plugins/wookmark-jquery-master/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Include the plug-in -->
+    <script src="assets/plugins/wookmark-jquery-master/wookmark.min.js"></script>
+
+    <!-- Once the page is loaded, initalize the plug-in. -->
+    <script type="text/javascript">
+
+        var gbks = gbks || {};
+
+        gbks.jQueryPlugin = function() {
+
+            this.init = function() {
+                $(window).resize($.proxy(this.resize, this));
+                this.resize();
+            };
+
+            this.resize = function() {
+                $('.photo-grid').wookmark({
+                    autoResize: true, // This will auto-update the layout when the browser window is resized.
+                    offset:0, // Optional, the distance between grid items
+                   // outerOffset: 5, // Optional, the distance to the containers border
+                   // itemWidth: 200 // Optional, the width of a grid item
+                  //  offset: 2,
+                    container: $('#photo-content')
+                });
+            };
+
+        }
+
+        var instance = null;
+        $(document).ready(function(){
+            instance = new gbks.jQueryPlugin();
+            instance.init();
+        });
+
+
+    </script>
+
+
+
+
+</body>
+</html>

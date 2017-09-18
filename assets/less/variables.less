@@ -1,0 +1,313 @@
+// VARIABLES 
+
+// Global values
+// --------------------------------------------------
+@baseColor: #2c99ce;
+@base-color: @baseColor;
+@brand-primary: #2c99ce;
+@brand-success: #69BD45;
+@brand-info: #5bc0de;
+@brand-warning: #f0ad4e;
+@brand-danger: #d9534f;
+
+.color-success {
+  color:@brand-success ;
+}
+
+@darkPrimaryColor: #689F38;
+@primaryColor: #8BC34A;
+@primaryHoverColor: #79B92D;
+@lightPrimaryColor: #DCEDC8;
+@textPrimaryColor: #212121;
+@accentColor: #69BD45;
+@primaryTextColor: #212121;
+@secondaryTextColor: #99CA3C;
+@grayText: #465259;
+@gray: #465259;
+@dividerColor: #B6B6B6;
+@darkColor: #212121;
+
+@color-1: @baseColor;
+@color-2: @accentColor;
+@color-3: @brand-warning;
+
+@link-color: @baseColor;
+@primaryColorDark: darken(@brand-primary, 35%);
+@primaryColorDarker: darken(@brand-primary, 33%);
+
+@base-color-dark: darken(@base-color, 35%);
+@base-color-darker: darken(@base-color, 45%);
+
+.darker {
+  color: @primaryColorDarker;
+}
+
+// size
+
+@link-size: 12px;
+
+.gray {
+  color: @secondaryTextColor;
+}
+
+.text-primary {
+  color: #009688;
+}
+
+// Links
+// -------------------------
+@linkColor: @primaryColorDark;
+@linkColorHover: darken(@primaryColorDark, 15%);
+
+// Typography
+// -------------------------
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|Roboto+Condensed:400,300,700italic,700,400italic,300italic);
+
+@sansFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@serifFontFamily: Georgia, "Times New Roman", Times, serif;
+@proximaFontFamily: "ProximaNova", Helvetica Neue, Helvetica, Arial, sans-serif;
+@robotoFontFamily: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
+@robotoFontCondensed: "Roboto Condensed", Helvetica Neue, Helvetica, Arial, sans-serif;
+@oswaldFontFamily: "Oswald", Helvetica Neue, Helvetica, Arial, sans-serif;
+
+@baseFontSize: 14px;
+@baseFontFamily: @robotoFontFamily;
+@base-font: @robotoFontFamily;
+@baseLineHeight: 20px;
+@altFontFamily: @sansFontFamily;
+
+@base-font: @baseFontFamily;
+@base-font-condensed: @robotoFontCondensed;
+
+@menu-font: @robotoFontCondensed;
+
+// Component sizing
+// -------------------------
+// Based on 14px font-size and 20px line-height
+
+@fontSizeLarge: @baseFontSize * 1.25;
+// ~18px
+@fontSizeSmall: @baseFontSize * 0.85;
+// ~12px
+@fontSizeMini: @baseFontSize * 0.75;
+// ~11px
+
+@paddingLarge: 11px 19px;
+// 44px
+@paddingSmall: 2px 10px;
+// 26px
+@paddingMini: 0 6px;
+// 22px
+
+@baseBorderRadius: 4px;
+@borderRadiusLarge: 6px;
+@borderRadiusSmall: 3px;
+
+// NAV
+// -------------------------
+
+@navbar-link-color: #333;
+@navbar-link-hover-color: #555;
+@navbar-link-bg: none;
+@navbar-link-hover-bg: none!important
+;
+@navbar-link-active-color: #555;
+@navbar-link-active-bg: none!important
+;
+
+@navbardark-link-color: #fff;
+@navbardark-link-hover-color: #ddd;
+@navbardark-link-bg: none;
+@navbardark-link-hover-bg: none!important
+;
+@navbardark-link-active-color: #ddd;
+@navbardark-link-active-bg: none!important
+;
+
+@navbarwhite-link-color: #fff;
+@navbarwhite-link-hover-color: #ddd;
+@navbarwhite-link-bg: none;
+@navbarwhite-link-hover-bg: none!important
+;
+@navbarwhite-link-active-color: #ddd;
+@navbarwhite-link-active-bg: none!important
+;
+
+@navbarblank-link-color: #fff;
+@navbarblank-link-hover-color: #ddd;
+@navbarblank-link-bg: none;
+@navbarblank-link-hover-bg: none!important
+;
+@navbarblank-link-active-color: #ddd;
+@navbarblank-link-active-bg: none!important
+;
+
+// Media
+// -------------------------
+
+@desktopOnly: ~"only screen and (min-width: 768px)";
+@xsOnly: ~"only screen and (max-width: 767px)";
+@mdOnly: ~"only screen and (min-width: 991px) and (max-width: 1199px)";
+@tabletx: ~"only screen and (min-width: 720px) and (max-width: 959px)";
+@xmobile: ~"only screen and (max-width: 320px)";
+@lgmax: ~"only screen and (max-width: 1199px)";
+@mdmax: ~"only screen and (max-width: 1199px)";
+
+@xs-min: 480px;
+@sm-min: 768px;
+@md-min: 992px;
+@lg-min: 1200px;
+
+@xs-max: (@sm-min - 1);
+@sm-max: (@md-min - 1);
+@md-max: (@lg-min - 1);
+
+@phone: ~"only screen and (min-width: @{xs-min})";
+@phone-strict: ~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+@tablet: ~"only screen and (min-width: @{sm-min})";
+@tablet-strict: ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+@desktop: ~"only screen and (min-width: @{md-min})";
+@desktop-strict: ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+@large: ~"only screen and (min-width: @{lg-min})";
+@max-lg: ~"only screen and (max-width: @{md-max})";
+@max-xs: ~"only screen and (max-width: 767px)";
+@min-xs: ~"only screen and (max-width: 768px)";
+
+@smonly: ~"only screen and (min-width:768px) and (max-width: 991px)";
+@mdonly: ~"only screen and (min-width:992px) and (max-width: 1199px)";
+@xsonly: ~"only screen and (min-width:0) and (max-width: 767px)";
+@max600: ~"only screen and (min-width:0) and (max-width: 600px)";
+@max480: ~"only screen and (min-width:0) and (max-width: 480px)";
+@max400: ~"only screen and (min-width:0) and (max-width: 400px)";
+@min1000: ~"only screen and (min-width:1000px) ";
+/*
+   usage
+*/
+
+@media @tablet-strict {
+  .hide-md {
+    display: none
+  }
+
+}
+
+@media (max-width: 480px) {
+  .col-xxs-12 {
+    width: 100%;
+  }
+}
+
+#example {
+  width: 100%;
+  @media @desktop-strict {
+    width: 768px;
+    .hide-md {
+      display: none
+    }
+  }
+  @media @desktop {
+    width: 940px;
+  }
+}
+
+// RESPONSIVE FONT SIZE HACK
+// -------------------------
+
+@fontSizeXtraLarge: @baseFontSize * 4;
+// ~54px
+@fontSizeLarge: @baseFontSize * 1.25;
+// ~18px
+@fontSizeSmall: @baseFontSize * 0.85;
+// ~12px
+@fontSizeMini: @baseFontSize * 0.75;
+// ~11px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

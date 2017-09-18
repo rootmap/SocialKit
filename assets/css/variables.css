@@ -1,0 +1,38 @@
+.gray {
+    color: #727272;
+}
+
+/*
+   usage
+*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .hide-md {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-xxs-12 {
+        width: 100%;
+    }
+}
+
+#example {
+    width: 100%;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    #example {
+        width: 768px;
+    }
+
+    #example .hide-md {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #example {
+        width: 940px;
+    }
+}

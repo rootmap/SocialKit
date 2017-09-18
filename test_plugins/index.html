@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>focus demo</title>
+  
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<p><input type="text" id="name-edit"></p>
+<p><input type="button" id="name" value="Edit"></p>
+ 
+<script>
+$("#name").click(function() {
+  $( "#name-edit" ).focus();
+});
+
+
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
+
+    <title>dostums </title>
+
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+    <link href="assets/material/css/roboto.min.css" rel="stylesheet">
+    <link href="assets/material/css/material.min.css" rel="stylesheet">
+    <link href="assets/material/css/ripples.min.css" rel="stylesheet">
+    <link href="assets/material/dropdownjs/jquery.dropdown.css" rel="stylesheet">
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+    <!-- jQuery (custom scroll plugins) -->
+    <script src="http://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
+    <link href="http://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+
+
+    <!-- jQuery (fullcalendar  plugins) -->
+    <script src="http://fullcalendar.io/js/fullcalendar-2.4.0/lib/moment.min.js"></script>
+    <script src="http://fullcalendar.io/js/fullcalendar-2.4.0/fullcalendar.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.4.0/fullcalendar.min.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.4.0/fullcalendar.print.css" rel="stylesheet">
+
+
+    <link href="assets/plugins/modal-library/mikes-modal.css" rel="stylesheet">
+    <script src="assets/plugins/modal-library/mikes-modal.min.js" type="text/javascript"></script>
+    <script>
+        jQuery(function () {
+            $("#open-mikes-modal").click(function (e) {
+                e.preventDefault();
+                $("#myModal").mikesModal();
+            });
+        });
+
+    </script>
+
+    <!-- main stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="assets/js/custom.modernizr.js"></script>
+    <script>
+        paceOptions = {
+            elements: true
+        };
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="header-wrapper">
+        <div class="header-nav">
+            <div class="navbar navbar-default navbar-site  navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-collapse"><span class="icon-bar"></span> <span
+                                class="icon-bar"></span> <span class="icon-bar"></span></button>
+                        <a class="navbar-brand" href="index.html"><img src="images/dostums-logo.png" alt="dostums ">
+                        </a></div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li>
+                                <div id="custom-search-input">
+                                    <div class="input-group col-md-12">
+                                        <input type="text" class="  search-query form-control" placeholder="Search"/>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button">
+                                        <span class=" fa fa-search"></span>
+                                    </button>
+                                </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#">Home </a>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle count-info">
+                                    <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-messages">
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a class="pull-left" href="profile.html">
+                                                <img src="images/user/user.jpg" class="img-circle" alt="image">
+                                            </a>
+
+
+                                            <div class="media-body">
+                                                <small class="pull-right msg-date">46h ago</small>
+                                                <strong>anisurrahman </strong> and <strong>3</strong> others followed
+                                                you. <br>
+                                                <small class="text-muted">2 days ago at 8:40 pm - 28.06.2015</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a class="pull-left" href="profile.html">
+                                                <img src="images/user/user2.jpg" class="img-circle" alt="image">
+                                            </a>
+
+                                            <div class="media-body ">
+                                                <small class="pull-right msg-date text-brand">5h ago</small>
+                                                <strong>Remaining Silent</strong> It's really ending. <br>
+                                                <small class="text-muted">Yesterday 2:30 pm - 24.06.2015</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a class="pull-left" href="profile.html">
+                                                <img src="images/user/default-user-picture.gif" class="img-circle"
+                                                     alt="image">
+                                            </a>
+
+                                            <div class="media-body ">
+                                                <small class="pull-right msg-date">14h ago</small>
+                                                <strong>Tom Faltesek </strong>, <strong>Damiano Fusco</strong> favorited
+                                                your <strong> Tweets</strong>. <br>
+                                                <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="text-center link-block">
+                                            <a href="mailbox.html">
+                                                <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle count-info">
+                                    <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-alerts dropdown-messages">
+                                    <li><a href="mailbox.html">
+                                        <div class="dropdown-messages-box">
+
+                                            <div class="media-body ">
+                                                <small class="pull-right text-muted msg-date">12 minutes ago</small>
+                                                <strong>MD Rubel</strong> asked to join <strong>'JOKES HOUSE'</strong>
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                    </li>
+                                    <li class="divider"></li>
+
+                                    <li><a href="mailbox.html">
+                                        <div class="dropdown-messages-box">
+
+                                            <div class="media-body ">
+                                                <small class="pull-right text-muted msg-date">18 minutes ago</small>
+                                                <strong>Md Sayemour Rahman SaYem</strong> commented on your photo.
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                    </li>
+
+                                    <li class="divider"></li>
+
+
+                                    <li>
+                                        <a href="mailbox.html">
+                                            <div>
+                                                <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                                <span class="pull-right text-muted small">4 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="profile.html">
+                                            <div>
+                                                <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                                <span class="pull-right text-muted small">12 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="grid_options.html">
+                                            <div>
+                                                <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                                <span class="pull-right text-muted small">4 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="text-center link-block">
+                                            <a href="notifications.html">
+                                                <strong>See All Alerts</strong>
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tanim Ahmed <span
+                                        class="fa fa-user "></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Account Settings <span class="fa fa-gear pull-right"></span></a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">User stats <span class="fa fa-gears pull-right"></span></a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Messages <span class="badge pull-right"> 42 </span></a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Favourites Post <span class="fa fa-heart pull-right"></span></a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Sign Out <span class="fa fa-sign-out pull-right"></span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                        <!-- /.navbar-right -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main-container page-container section-padd">
+    <div class="mailbox-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12"><h4 class="pull-left page-title"><i class="mdi-action-settings"></i> settings
+                    <span class="sub-text"> Manage My Profile  </span></h4>
+                    <ol class="breadcrumb pull-right">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Setting</a></li>
+                        <li class="active">Privacy</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 ">
+
+                    <div class="panel panel-default">
+                        <div class="panel-body p-0">
+                            <div class="list-group mail-list">
+                                <a href="#" class="list-group-item no-border active"><i
+                                    class="mdi-action-settings-applications"></i>General </a>
+                                <a href="#" class="list-group-item no-border"><i
+                                    class="mdi-hardware-security"></i>Security </a>
+                                <hr class="lihr">
+                                <a href="#" class="list-group-item no-border"><i class="mdi-content-block"></i>Blocking
+                                </a> <a href="#" class="list-group-item no-border"><i
+                                        class="mdi-social-notifications"></i>Notifications </a>
+                                <a href="#"     class="list-group-item no-border"><i
+                                        class="mdi-social-people"></i>Followers
+                                    <b>(354)</b></a>
+                                <hr class="lihr">
+                                <a href="#"     class="list-group-item no-border"><i
+                                        class="mdi-action-assignment"></i>Ads
+                                    <b>(354)</b></a>
+
+                                <a href="#"     class="list-group-item no-border"><i
+                                        class="mdi-action-payment"></i>Payments
+                                   </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9">
+
+                        <div class="ibox ">
+                            <div class="ibox-title">
+                                <h5>Basic Information <small>You won't be able to change your name within the next 60 days</small></h5>
+                                <div class="ibox-tools">
+
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="#">Config option 1</a>
+                                        </li>
+                                        <li><a href="#">Config option 2</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="ibox-content">
+
+                                <form class="">
+                                    <fieldset>
+
+
+                                        <div class="row form-group">
+                                            <div class="col-sm-6">
+                                                <!-- Text input-->
+                                                <div class="control-group ">
+                                                    <label class="control-label" for="textinput">First Name</label>
+                                                    <div class="controls">
+                                                        <input id="textinput" name="textinput" value="Tanim" class=" form-control" type="text">
+                                                        <p class="help-block hide">help</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <!-- Text input-->
+                                                <div class="control-group">
+                                                    <label class="control-label" for="textinput">Last Name</label>
+                                                    <div class="controls">
+                                                        <input id="textinput" name="textinput" value="Ahmed" class=" form-control" type="text">
+                                                        <p class="help-block hide">help</p>
+                                                    </div>
+                                                </div>
+                                                </div>
+
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="control-label" for="textinput">Occupation</label>
+                                            <div class="controls">
+                                                <input id="textinput" name="textinput" value="Senior UI/UX Engineer" class=" form-control" type="text">
+                                                <p class="help-block hide">help</p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label class="control-label" for="textinput">Company</label>
+                                            <div class="controls">
+                                                <input id="textinput" name="textinput" value="Bluescheme Ltd." class=" form-control" type="text">
+                                                <p class="help-block hide">help</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row form-group">
+                                            <div class="col-sm-6">
+                                                <!-- Text input-->
+                                                <div class="control-group ">
+                                                    <label class="control-label" for="textinput">Location</label>
+                                                    <div class="controls">
+                                                        <select  class="form-control " name="country" id="country" >  <option value="" selected="" class="form-option form-option-empty">All Countries</option>  <option value="United States" data-code="US" class="form-option">United States</option>  <option value="Afghanistan" data-code="AF" class="form-option">Afghanistan</option>  <option value="Aland Islands" data-code="AX" class="form-option">Aland Islands</option>  <option value="Albania" data-code="AL" class="form-option">Albania</option>  <option value="Algeria" data-code="DZ" class="form-option">Algeria</option>  <option value="American Samoa" data-code="AS" class="form-option">American Samoa</option>  <option value="Andorra" data-code="AD" class="form-option">Andorra</option>  <option value="Angola" data-code="AO" class="form-option">Angola</option>  <option value="Anguilla" data-code="AI" class="form-option">Anguilla</option>  <option value="Antarctica" data-code="AQ" class="form-option">Antarctica</option>  <option value="Antigua and Barbuda" data-code="AG" class="form-option">Antigua and Barbuda</option>  <option value="Argentina" data-code="AR" class="form-option">Argentina</option>  <option value="Armenia" data-code="AM" class="form-option">Armenia</option>  <option value="Aruba" data-code="AW" class="form-option">Aruba</option>  <option value="Australia" data-code="AU" class="form-option">Australia</option>  <option value="Austria" data-code="AT" class="form-option">Austria</option>  <option value="Azerbaijan" data-code="AZ" class="form-option">Azerbaijan</option>  <option value="Bahamas" data-code="BS" class="form-option">Bahamas</option>  <option value="Bahrain" data-code="BH" class="form-option">Bahrain</option>  <option selected="" value="Bangladesh" data-code="BD" class="form-option">Bangladesh</option>  <option value="Barbados" data-code="BB" class="form-option">Barbados</option>  <option value="Belarus" data-code="BY" class="form-option">Belarus</option>  <option value="Belgium" data-code="BE" class="form-option">Belgium</option>  <option value="Belize" data-code="BZ" class="form-option">Belize</option>  <option value="Benin" data-code="BJ" class="form-option">Benin</option>  <option value="Bermuda" data-code="BM" class="form-option">Bermuda</option>  <option value="Bhutan" data-code="BT" class="form-option">Bhutan</option>  <option value="Bolivia" data-code="BO" class="form-option">Bolivia</option>  <option value="Bonaire, Saint Eustatius and Saba" data-code="BQ" class="form-option">Bonaire, Saint Eustatius and Saba</option>  <option value="Bosnia and Herzegovina" data-code="BA" class="form-option">Bosnia and Herzegovina</option>  <option value="Botswana" data-code="BW" class="form-option">Botswana</option>  <option value="Brazil" data-code="BR" class="form-option">Brazil</option>  <option value="British Indian Ocean Territory" data-code="IO" class="form-option">British Indian Ocean Territory</option>  <option value="Brunei Darussalam" data-code="BN" class="form-option">Brunei Darussalam</option>  <option value="Bulgaria" data-code="BG" class="form-option">Bulgaria</option>  <option value="Burkina Faso" data-code="BF" class="form-option">Burkina Faso</option>  <option value="Burundi" data-code="BI" class="form-option">Burundi</option>  <option value="Cambodia" data-code="KH" class="form-option">Cambodia</option>  <option value="Cameroon" data-code="CM" class="form-option">Cameroon</option>  <option value="Canada" data-code="CA" class="form-option">Canada</option>  <option value="Cape Verde" data-code="CV" class="form-option">Cape Verde</option>  <option value="Cayman Islands" data-code="KY" class="form-option">Cayman Islands</option>  <option value="Central African Republic" data-code="CF" class="form-option">Central African Republic</option>  <option value="Chad" data-code="TD" class="form-option">Chad</option>  <option value="Chile" data-code="CL" class="form-option">Chile</option>  <option value="China" data-code="CN" class="form-option">China</option>  <option value="Christmas Island" data-code="CX" class="form-option">Christmas Island</option>  <option value="Cocos (Keeling) Islands" data-code="CC" class="form-option">Cocos (Keeling) Islands</option>  <option value="Colombia" data-code="CO" class="form-option">Colombia</option>  <option value="Comoros" data-code="KM" class="form-option">Comoros</option>  <option value="Congo" data-code="CG" class="form-option">Congo</option>  <option value="Congo, The Democratic Republic of the" data-code="CD" class="form-option">Congo, The Democratic Republic of the</option>  <option value="Cook Islands" data-code="CK" class="form-option">Cook Islands</option>  <option value="Costa Rica" data-code="CR" class="form-option">Costa Rica</option>  <option value="Cote d'Ivoire" data-code="CI" class="form-option">Cote d'Ivoire</option>  <option value="Croatia" data-code="HR" class="form-option">Croatia</option>  <option value="Cuba" data-code="CU" class="form-option">Cuba</option>  <option value="Curacao" data-code="CW" class="form-option">Curacao</option>  <option value="Cyprus" data-code="CY" class="form-option">Cyprus</option>  <option value="Czech Republic" data-code="CZ" class="form-option">Czech Republic</option>  <option value="Denmark" data-code="DK" class="form-option">Denmark</option>  <option value="Djibouti" data-code="DJ" class="form-option">Djibouti</option>  <option value="Dominica" data-code="DM" class="form-option">Dominica</option>  <option value="Dominican Republic" data-code="DO" class="form-option">Dominican Republic</option>  <option value="Ecuador" data-code="EC" class="form-option">Ecuador</option>  <option value="Egypt" data-code="EG" class="form-option">Egypt</option>  <option value="El Salvador" data-code="SV" class="form-option">El Salvador</option>  <option value="Equatorial Guinea" data-code="GQ" class="form-option">Equatorial Guinea</option>  <option value="Eritrea" data-code="ER" class="form-option">Eritrea</option>  <option value="Estonia" data-code="EE" class="form-option">Estonia</option>  <option value="Ethiopia" data-code="ET" class="form-option">Ethiopia</option>  <option value="Falkland Islands (Malvinas)" data-code="FK" class="form-option">Falkland Islands (Malvinas)</option>  <option value="Faroe Islands" data-code="FO" class="form-option">Faroe Islands</option>  <option value="Fiji" data-code="FJ" class="form-option">Fiji</option>  <option value="Finland" data-code="FI" class="form-option">Finland</option>  <option value="France" data-code="FR" class="form-option">France</option>  <option value="French Guiana" data-code="GF" class="form-option">French Guiana</option>  <option value="French Polynesia" data-code="PF" class="form-option">French Polynesia</option>  <option value="French Southern Territories" data-code="TF" class="form-option">French Southern Territories</option>  <option value="Gabon" data-code="GA" class="form-option">Gabon</option>  <option value="Gambia" data-code="GM" class="form-option">Gambia</option>  <option value="Georgia" data-code="GE" class="form-option">Georgia</option>  <option value="Germany" data-code="DE" class="form-option">Germany</option>  <option value="Ghana" data-code="GH" class="form-option">Ghana</option>  <option value="Gibraltar" data-code="GI" class="form-option">Gibraltar</option>  <option value="Greece" data-code="GR" class="form-option">Greece</option>  <option value="Greenland" data-code="GL" class="form-option">Greenland</option>  <option value="Grenada" data-code="GD" class="form-option">Grenada</option>  <option value="Guadeloupe" data-code="GP" class="form-option">Guadeloupe</option>  <option value="Guam" data-code="GU" class="form-option">Guam</option>  <option value="Guatemala" data-code="GT" class="form-option">Guatemala</option>  <option value="Guernsey" data-code="GG" class="form-option">Guernsey</option>  <option value="Guinea" data-code="GN" class="form-option">Guinea</option>  <option value="Guinea-Bissau" data-code="GW" class="form-option">Guinea-Bissau</option>  <option value="Guyana" data-code="GY" class="form-option">Guyana</option>  <option value="Haiti" data-code="HT" class="form-option">Haiti</option>  <option value="Holy See (Vatican City State)" data-code="VA" class="form-option">Holy See (Vatican City State)</option>  <option value="Honduras" data-code="HN" class="form-option">Honduras</option>  <option value="Hong Kong" data-code="HK" class="form-option">Hong Kong</option>  <option value="Hungary" data-code="HU" class="form-option">Hungary</option>  <option value="Iceland" data-code="IS" class="form-option">Iceland</option>  <option value="India" data-code="IN" class="form-option">India</option>  <option value="Indonesia" data-code="ID" class="form-option">Indonesia</option>  <option value="Iran, Islamic Republic of" data-code="IR" class="form-option">Iran, Islamic Republic of</option>  <option value="Iraq" data-code="IQ" class="form-option">Iraq</option>  <option value="Ireland" data-code="IE" class="form-option">Ireland</option>  <option value="Isle of Man" data-code="IM" class="form-option">Isle of Man</option>  <option value="Israel" data-code="IL" class="form-option">Israel</option>  <option value="Italy" data-code="IT" class="form-option">Italy</option>  <option value="Jamaica" data-code="JM" class="form-option">Jamaica</option>  <option value="Japan" data-code="JP" class="form-option">Japan</option>  <option value="Jersey" data-code="JE" class="form-option">Jersey</option>  <option value="Jordan" data-code="JO" class="form-option">Jordan</option>  <option value="Kazakhstan" data-code="KZ" class="form-option">Kazakhstan</option>  <option value="Kenya" data-code="KE" class="form-option">Kenya</option>  <option value="Kiribati" data-code="KI" class="form-option">Kiribati</option>  <option value="Korea, Democratic People's Republic of" data-code="KP" class="form-option">Korea, Democratic People's Republic of</option>  <option value="Korea, Republic of" data-code="KR" class="form-option">Korea, Republic of</option>  <option value="Kosovo" data-code="XK" class="form-option">Kosovo</option>  <option value="Kuwait" data-code="KW" class="form-option">Kuwait</option>  <option value="Kyrgyzstan" data-code="KG" class="form-option">Kyrgyzstan</option>  <option value="Lao People's Democratic Republic" data-code="LA" class="form-option">Lao People's Democratic Republic</option>  <option value="Latvia" data-code="LV" class="form-option">Latvia</option>  <option value="Lebanon" data-code="LB" class="form-option">Lebanon</option>  <option value="Lesotho" data-code="LS" class="form-option">Lesotho</option>  <option value="Liberia" data-code="LR" class="form-option">Liberia</option>  <option value="Libya" data-code="LY" class="form-option">Libya</option>  <option value="Liechtenstein" data-code="LI" class="form-option">Liechtenstein</option>  <option value="Lithuania" data-code="LT" class="form-option">Lithuania</option>  <option value="Luxembourg" data-code="LU" class="form-option">Luxembourg</option>  <option value="Macao" data-code="MO" class="form-option">Macao</option>  <option value="Macedonia" data-code="MK" class="form-option">Macedonia</option>  <option value="Madagascar" data-code="MG" class="form-option">Madagascar</option>  <option value="Malawi" data-code="MW" class="form-option">Malawi</option>  <option value="Malaysia" data-code="MY" class="form-option">Malaysia</option>  <option value="Maldives" data-code="MV" class="form-option">Maldives</option>  <option value="Mali" data-code="ML" class="form-option">Mali</option>  <option value="Malta" data-code="MT" class="form-option">Malta</option>  <option value="Marshall Islands" data-code="MH" class="form-option">Marshall Islands</option>  <option value="Martinique" data-code="MQ" class="form-option">Martinique</option>  <option value="Mauritania" data-code="MR" class="form-option">Mauritania</option>  <option value="Mauritius" data-code="MU" class="form-option">Mauritius</option>  <option value="Mayotte" data-code="YT" class="form-option">Mayotte</option>  <option value="Mexico" data-code="MX" class="form-option">Mexico</option>  <option value="Micronesia, Federated States of" data-code="FM" class="form-option">Micronesia, Federated States of</option>  <option value="Moldova, Republic of" data-code="MD" class="form-option">Moldova, Republic of</option>  <option value="Monaco" data-code="MC" class="form-option">Monaco</option>  <option value="Mongolia" data-code="MN" class="form-option">Mongolia</option>  <option value="Montenegro" data-code="ME" class="form-option">Montenegro</option>  <option value="Montserrat" data-code="MS" class="form-option">Montserrat</option>  <option value="Morocco" data-code="MA" class="form-option">Morocco</option>  <option value="Mozambique" data-code="MZ" class="form-option">Mozambique</option>  <option value="Myanmar" data-code="MM" class="form-option">Myanmar</option>  <option value="Namibia" data-code="NA" class="form-option">Namibia</option>  <option value="Nauru" data-code="NR" class="form-option">Nauru</option>  <option value="Nepal" data-code="NP" class="form-option">Nepal</option>  <option value="Netherlands" data-code="NL" class="form-option">Netherlands</option>  <option value="New Caledonia" data-code="NC" class="form-option">New Caledonia</option>  <option value="New Zealand" data-code="NZ" class="form-option">New Zealand</option>  <option value="Nicaragua" data-code="NI" class="form-option">Nicaragua</option>  <option value="Niger" data-code="NE" class="form-option">Niger</option>  <option value="Nigeria" data-code="NG" class="form-option">Nigeria</option>  <option value="Niue" data-code="NU" class="form-option">Niue</option>  <option value="Norfolk Island" data-code="NF" class="form-option">Norfolk Island</option>  <option value="Northern Mariana Islands" data-code="MP" class="form-option">Northern Mariana Islands</option>  <option value="Norway" data-code="NO" class="form-option">Norway</option>  <option value="Oman" data-code="OM" class="form-option">Oman</option>  <option value="Pakistan" data-code="PK" class="form-option">Pakistan</option>  <option value="Palau" data-code="PW" class="form-option">Palau</option>  <option value="Palestinian Territory" data-code="PS" class="form-option">Palestinian Territory</option>  <option value="Panama" data-code="PA" class="form-option">Panama</option>  <option value="Papua New Guinea" data-code="PG" class="form-option">Papua New Guinea</option>  <option value="Paraguay" data-code="PY" class="form-option">Paraguay</option>  <option value="Peru" data-code="PE" class="form-option">Peru</option>  <option value="Philippines" data-code="PH" class="form-option">Philippines</option>  <option value="Pitcairn" data-code="PN" class="form-option">Pitcairn</option>  <option value="Poland" data-code="PL" class="form-option">Poland</option>  <option value="Portugal" data-code="PT" class="form-option">Portugal</option>  <option value="Puerto Rico" data-code="PR" class="form-option">Puerto Rico</option>  <option value="Qatar" data-code="QA" class="form-option">Qatar</option>  <option value="Reunion" data-code="RE" class="form-option">Reunion</option>  <option value="Romania" data-code="RO" class="form-option">Romania</option>  <option value="Russian Federation" data-code="RU" class="form-option">Russian Federation</option>  <option value="Rwanda" data-code="RW" class="form-option">Rwanda</option>  <option value="Saint Bartelemey" data-code="BL" class="form-option">Saint Bartelemey</option>  <option value="Saint Helena" data-code="SH" class="form-option">Saint Helena</option>  <option value="Saint Kitts and Nevis" data-code="KN" class="form-option">Saint Kitts and Nevis</option>  <option value="Saint Lucia" data-code="LC" class="form-option">Saint Lucia</option>  <option value="Saint Martin" data-code="MF" class="form-option">Saint Martin</option>  <option value="Saint Pierre and Miquelon" data-code="PM" class="form-option">Saint Pierre and Miquelon</option>  <option value="Saint Vincent and the Grenadines" data-code="VC" class="form-option">Saint Vincent and the Grenadines</option>  <option value="Samoa" data-code="WS" class="form-option">Samoa</option>  <option value="San Marino" data-code="SM" class="form-option">San Marino</option>  <option value="Sao Tome and Principe" data-code="ST" class="form-option">Sao Tome and Principe</option>  <option value="Saudi Arabia" data-code="SA" class="form-option">Saudi Arabia</option>  <option value="Senegal" data-code="SN" class="form-option">Senegal</option>  <option value="Serbia" data-code="RS" class="form-option">Serbia</option>  <option value="Seychelles" data-code="SC" class="form-option">Seychelles</option>  <option value="Sierra Leone" data-code="SL" class="form-option">Sierra Leone</option>  <option value="Singapore" data-code="SG" class="form-option">Singapore</option>  <option value="Sint Maarten" data-code="SX" class="form-option">Sint Maarten</option>  <option value="Slovakia" data-code="SK" class="form-option">Slovakia</option>  <option value="Slovenia" data-code="SI" class="form-option">Slovenia</option>  <option value="Solomon Islands" data-code="SB" class="form-option">Solomon Islands</option>  <option value="Somalia" data-code="SO" class="form-option">Somalia</option>  <option value="South Africa" data-code="ZA" class="form-option">South Africa</option>  <option value="South Georgia and the South Sandwich Islands" data-code="GS" class="form-option">South Georgia and the South Sandwich Islands</option>  <option value="South Sudan" data-code="SS" class="form-option">South Sudan</option>  <option value="Spain" data-code="ES" class="form-option">Spain</option>  <option value="Sri Lanka" data-code="LK" class="form-option">Sri Lanka</option>  <option value="Sudan" data-code="SD" class="form-option">Sudan</option>  <option value="Suriname" data-code="SR" class="form-option">Suriname</option>  <option value="Svalbard and Jan Mayen" data-code="SJ" class="form-option">Svalbard and Jan Mayen</option>  <option value="Swaziland" data-code="SZ" class="form-option">Swaziland</option>  <option value="Sweden" data-code="SE" class="form-option">Sweden</option>  <option value="Switzerland" data-code="CH" class="form-option">Switzerland</option>  <option value="Syrian Arab Republic" data-code="SY" class="form-option">Syrian Arab Republic</option>  <option value="Taiwan" data-code="TW" class="form-option">Taiwan</option>  <option value="Tajikistan" data-code="TJ" class="form-option">Tajikistan</option>  <option value="Tanzania, United Republic of" data-code="TZ" class="form-option">Tanzania, United Republic of</option>  <option value="Thailand" data-code="TH" class="form-option">Thailand</option>  <option value="Timor-Leste" data-code="TL" class="form-option">Timor-Leste</option>  <option value="Togo" data-code="TG" class="form-option">Togo</option>  <option value="Tokelau" data-code="TK" class="form-option">Tokelau</option>  <option value="Tonga" data-code="TO" class="form-option">Tonga</option>  <option value="Trinidad and Tobago" data-code="TT" class="form-option">Trinidad and Tobago</option>  <option value="Tunisia" data-code="TN" class="form-option">Tunisia</option>  <option value="Turkey" data-code="TR" class="form-option">Turkey</option>  <option value="Turkmenistan" data-code="TM" class="form-option">Turkmenistan</option>  <option value="Turks and Caicos Islands" data-code="TC" class="form-option">Turks and Caicos Islands</option>  <option value="Tuvalu" data-code="TV" class="form-option">Tuvalu</option>  <option value="Uganda" data-code="UG" class="form-option">Uganda</option>  <option value="Ukraine" data-code="UA" class="form-option">Ukraine</option>  <option value="United Arab Emirates" data-code="AE" class="form-option">United Arab Emirates</option>  <option value="United Kingdom" data-code="GB" class="form-option">United Kingdom</option>  <option value="United States Minor Outlying Islands" data-code="UM" class="form-option">United States Minor Outlying Islands</option>  <option value="Uruguay" data-code="UY" class="form-option">Uruguay</option>  <option value="Uzbekistan" data-code="UZ" class="form-option">Uzbekistan</option>  <option value="Vanuatu" data-code="VU" class="form-option">Vanuatu</option>  <option value="Venezuela" data-code="VE" class="form-option">Venezuela</option>  <option value="Vietnam" data-code="VN" class="form-option">Vietnam</option>  <option value="Virgin Islands, British" data-code="VG" class="form-option">Virgin Islands, British</option>  <option value="Virgin Islands, U.S." data-code="VI" class="form-option">Virgin Islands, U.S.</option>  <option value="Wallis and Futuna" data-code="WF" class="form-option">Wallis and Futuna</option>  <option value="Western Sahara" data-code="EH" class="form-option">Western Sahara</option>  <option value="Yemen" data-code="YE" class="form-option">Yemen</option>  <option value="Zambia" data-code="ZM" class="form-option">Zambia</option>  <option value="Zimbabwe" data-code="ZW" class="form-option">Zimbabwe</option>  </select>
+                                                        <p class="help-block hide">help</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <!-- Text input-->
+                                                <div class="control-group">
+                                                    <label class="control-label" for="textinput"> &nbsp; </label>
+                                                    <div class="controls">
+                                                        <input id="textinput" name="location-sub" value="Dhaka" class=" form-control" type="text">
+                                                        <p class="help-block hide">help</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="control-label" for="textinput">Website URL</label>
+                                            <div class="controls">
+                                                <div class="input-group">
+                                                    <div class="input-group-addon">http://</div>
+                                                    <input type="text" class="form-control" id="exampleInputAmount" value="tanimdesign.net">
+                                                </div>                                                <p class="help-block hide">help</p>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </fieldset>
+                                </form>
+
+                            </div>
+                        </div>
+
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>About <small></small></h5>
+                            <div class="ibox-tools">
+
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+
+                            <form class="">
+                                <fieldset>
+
+                                    <div class="form-group">
+                                        <label class="control-label" for="textinput">Section Title</label>
+                                        <div class="controls">
+                                            <input id="textinput" name="textinput" value="About" class=" form-control" type="text">
+                                            <p class="help-block hide">help</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label class="control-label" for="textinput">Description</label>
+                                        <div class="controls">
+
+                                            <textarea class="form-control" id="textarea" name="textarea">default text</textarea>
+
+                                            <p class="help-block hide">help</p>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>Education <small></small></h5>
+                            <div class="ibox-tools">
+
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+
+                            <form class="">
+                                <fieldset>
+
+                                    <div class="form-group">
+                                        <label class="control-label" for="textinput">Section Title</label>
+                                        <div class="controls">
+                                            <input id="textinput" name="textinput" value="Education " class=" form-control" type="text">
+                                            <p class="help-block hide">help</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label class="control-label" for="textinput">Description</label>
+                                        <div class="controls">
+
+                                            <textarea class="form-control" id="textarea" name="textarea">BSc in Electrical & Electronics Engineering from Stamford University  </textarea>
+
+                                            <p class="help-block hide">help</p>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                            </form>
+
+                        </div>
+                    </div>
+
+
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>Education <small></small></h5>
+                            <div class="ibox-tools">
+
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+
+                            <form class="">
+                                <fieldset>
+
+                                    <div class="form-group">
+                                        <label class="control-label" for="textinput">Section Title</label>
+                                        <div class="controls">
+                                            <input id="textinput" name="textinput" value="Education " class=" form-control" type="text">
+                                            <p class="help-block hide">help</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label class="control-label" for="textinput">Description</label>
+                                        <div class="controls">
+
+                                            <textarea class="form-control" id="textarea" name="textarea">BSc in Electrical & Electronics Engineering from Stamford University  </textarea>
+                                            <p class="help-block hide">help</p>
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>Social Link <small></small></h5>
+                            <div class="ibox-tools">
+
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+
+                            <form class="">
+                                <fieldset>
+
+                                    <div class="form-group">
+                                        <table class="table  table-social">
+                                            <thead>
+                                            <tr>
+                                                <th><i class="fa fa-2x fa-twitter-square"></i> </th>
+                                                <th> Twitter  </th>
+                                                <th style="width: 30%;">@btanim <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></td>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><i class="fa fa-2x fa-linkedin-square"></i> </td>
+                                                <td> linkedin  </td>
+                                                <td>
+
+
+                                                    <a class="editable" data-type="text" data-pk="1"  data-title="@btanim">@TanimAhnmedBd</a>
+                                                    <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td><i class="fa fa-2x fa-facebook"></i> </td>
+                                                <td> Facebook  </td>
+                                                <td style="widtd: 100px">
+
+
+                                                    <a class="editable" data-type="text" data-pk="1"  data-title="@btanim">@btanim</a>
+
+
+                                                    <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></td>
+
+                                            </tr>
+
+
+                                            <tr>
+                                                <td><i class="fa fa-2x fa-google-plus-square"></i> </td>
+                                                <td>  Google+
+                                                </td>
+                                                <td >
+
+                                                    <a class="editable" data-type="text" data-pk="1"  data-title="@TanimAhmed+">@TanimAhmed+</a>
+
+
+
+                                                    <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td><i class="fa fa-2x fa-youtube-square"></i> </td>
+                                                <td>  YouTube
+                                                </td>
+                                                <td>    <a class="editable" data-type="text" data-pk="1"  data-title="@TanimAhmed+">@btanim</a>
+                                                    <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><i class="fa fa-2x fa-youtube-square"></i> </td>
+                                                <td>  Viber
+                                                </td>
+                                                <td>   <a class="editable" data-type="text" data-pk="1"  data-title="@TanimViber">@TanimAhmed+</a>
+                                                    <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></td>
+                                            </tr>
+
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+
+
+                                </fieldset>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p class="pull-left hide">
+                    Copyright © 2015 dostums Inc. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/material/dropdownjs/jquery.dropdown.js"></script>
+    <script src="assets/material/js/ripples.min.js"></script>
+    <script src="assets/material/js/material.min.js"></script>
+
+
+    <script src="assets/js/jquery.scrollto.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/jquery.sticky.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

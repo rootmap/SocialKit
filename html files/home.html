@@ -1,0 +1,2030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
+
+    <title>dostums </title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+    <link href="assets/material/css/roboto.min.css" rel="stylesheet">
+    <link href="assets/material/css/material.min.css" rel="stylesheet">
+    <link href="assets/material/css/ripples.min.css" rel="stylesheet">
+    <link href="assets/material/dropdownjs/jquery.dropdown.css" rel="stylesheet">
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <!-- jQuery (necessary for newsbox news slider) -->
+    <script src="assets/plugins/newsbox/jquery.bootstrap.newsbox.min.js"></script>
+
+
+        <!-- jQuery (custom scroll plugins) -->
+    <script src="http://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
+    <link href="http://cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+
+
+    <!-- jQuery (fullcalendar  plugins) -->
+    <script src="http://fullcalendar.io/js/fullcalendar-2.4.0/lib/moment.min.js"></script>
+    <script src="http://fullcalendar.io/js/fullcalendar-2.4.0/fullcalendar.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.4.0/fullcalendar.min.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.4.0/fullcalendar.print.css" rel="stylesheet">
+
+
+    <link href="assets/plugins/modal-library/mikes-modal.css" rel="stylesheet">
+    <script src="assets/plugins/modal-library/mikes-modal.min.js" type="text/javascript"></script>
+    <script>
+        jQuery(function () {
+            $("#open-mikes-modal").click(function (e) {
+                e.preventDefault();
+                $("#myModal").mikesModal();
+            });
+        });
+
+    </script>
+
+    <!-- main stylesheet -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="assets/js/custom.modernizr.js"></script>
+    <script>
+        paceOptions = {
+            elements: true
+        };
+    </script>
+</head>
+<body class="home">
+<header>
+    <div class="header-wrapper">
+
+        <div class="header-nav">
+            <div class="navbar navbar-default navbar-site  navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-collapse"><span class="icon-bar"></span> <span
+                                class="icon-bar"></span> <span class="icon-bar"></span></button>
+                        <a class="navbar-brand" href="index.html"><img src="images/dostums-logo.png" alt="dostums ">
+                        </a></div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li>
+                                <div id="custom-search-input">
+                                    <div class="input-group col-md-12">
+                                        <input type="text" class="  search-query form-control" placeholder="Search"/>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button">
+                                        <span class=" fa fa-search"></span>
+                                    </button>
+                                </span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#">Home </a>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle count-info">
+                                    <i class="fa fa-envelope"></i> <span class="label label-warning">16</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-messages">
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a class="pull-left" href="profile.html">
+                                                <img src="images/user/user.jpg" class="img-circle" alt="image">
+                                            </a>
+
+
+                                            <div class="media-body">
+                                                <small class="pull-right msg-date">46h ago</small>
+                                                <strong>anisurrahman </strong> and <strong>3</strong> others followed
+                                                you. <br>
+                                                <small class="text-muted">2 days ago at 8:40 pm - 28.06.2015</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a class="pull-left" href="profile.html">
+                                                <img src="images/user/user2.jpg" class="img-circle" alt="image">
+                                            </a>
+
+                                            <div class="media-body ">
+                                                <small class="pull-right msg-date text-brand">5h ago</small>
+                                                <strong>Remaining Silent</strong> It's really ending. <br>
+                                                <small class="text-muted">Yesterday 2:30 pm - 24.06.2015</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a class="pull-left" href="profile.html">
+                                                <img src="images/user/default-user-picture.gif" class="img-circle"
+                                                     alt="image">
+                                            </a>
+
+                                            <div class="media-body ">
+                                                <small class="pull-right msg-date">14h ago</small>
+                                                <strong>Tom Faltesek </strong>, <strong>Damiano Fusco</strong> favorited
+                                                your <strong> Tweets</strong>. <br>
+                                                <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="text-center link-block">
+                                            <a href="mailbox.html">
+                                                <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown ">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle count-info">
+                                    <i class="fa fa-bell"></i> <span class="label label-primary">8</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-alerts dropdown-messages">
+                                    <li><a href="mailbox.html">
+                                        <div class="dropdown-messages-box">
+
+                                            <div class="media-body ">
+                                                <small class="pull-right text-muted msg-date">12 minutes ago</small>
+                                                <strong>MD Rubel</strong> asked to join <strong>'JOKES HOUSE'</strong>
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                    </li>
+                                    <li class="divider"></li>
+
+                                    <li><a href="mailbox.html">
+                                        <div class="dropdown-messages-box">
+
+                                            <div class="media-body ">
+                                                <small class="pull-right text-muted msg-date">18 minutes ago</small>
+                                                <strong>Md Sayemour Rahman SaYem</strong> commented on your photo.
+
+                                            </div>
+                                        </div>
+                                    </a>
+                                    </li>
+
+                                    <li class="divider"></li>
+
+
+                                    <li>
+                                        <a href="mailbox.html">
+                                            <div>
+                                                <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                                <span class="pull-right text-muted small">4 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="profile.html">
+                                            <div>
+                                                <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                                <span class="pull-right text-muted small">12 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="grid_options.html">
+                                            <div>
+                                                <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                                <span class="pull-right text-muted small">4 minutes ago</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="divider"></li>
+                                    <li>
+                                        <div class="text-center link-block">
+                                            <a href="notifications.html">
+                                                <strong>See All Alerts</strong>
+                                                <i class="fa fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tanim Ahmed <span
+                                        class="fa fa-user "></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Account Settings <span class="fa fa-gear pull-right"></span></a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">User stats <span class="fa fa-gears pull-right"></span></a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Messages <span class="badge pull-right"> 42 </span></a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Favourites Post <span class="fa fa-heart pull-right"></span></a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Sign Out <span class="fa fa-sign-out pull-right"></span></a></li>
+                                </ul>
+                            </li>
+
+                            <li >
+                                <a id="chat-trigger" href="#"> <i class="fa fa-comment"></i> CHAT </a>
+                            </li>
+                        </ul>
+
+
+                        <!-- /.navbar-right -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div style="margin-left:10px;" id="chat_window_1" class="row chat-window col-xs-5 col-md-3">
+    <div class="col-xs-12 col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading top-bar">
+                <div class="col-md-8 col-xs-8">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> Chat - William</h3>
+                </div>
+                <div style="text-align: right;" class="col-md-4 col-xs-4">
+                    <a href="#"><span class="glyphicon icon_minim glyphicon-minus" id="minim_chat_window"></span></a>
+                    <a href="#"><span data-id="chat_window_1" class="glyphicon glyphicon-remove icon_close"></span></a>
+                </div>
+            </div>
+            <div class="panel-body msg_container_base" style="display: block;">
+
+                <div class="ibox float-e-margins">
+
+                    <div class="ibox-content">
+
+                        <div>
+                            <div class="chat-activity-list">
+
+                                <div class="chat-element">
+                                    <a class="pull-left" href="#">
+                                        <img src="images/user/1.jpg" class="img-circle" alt="image">
+                                    </a>
+
+                                    <div class="media-body ">
+                                        <small class="pull-right text-navy">1m ago</small>
+                                        <strong>Rihan Ahmed</strong>
+
+                                        <p class="m-b-xs">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been
+                                        </p>
+                                        <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
+                                    </div>
+                                </div>
+
+                                <div class="chat-element right">
+                                    <a class="pull-right" href="#">
+                                        <img src="images/user/2.jpg" class="img-circle" alt="image">
+                                    </a>
+
+                                    <div class="media-body text-right ">
+                                        <small class="pull-left">5m ago</small>
+                                        <strong>Anik Khan</strong>
+
+                                        <p class="m-b-xs">
+                                            Lorem Ipsum is simply dummy text of the printing.
+                                        </p>
+                                        <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
+                                    </div>
+                                </div>
+
+                                <div class="chat-element ">
+                                    <a class="pull-left" href="#">
+                                        <img src="images/user/2.jpg" class="img-circle" alt="image">
+                                    </a>
+
+                                    <div class="media-body ">
+                                        <small class="pull-right">2h ago</small>
+                                        <strong>Rihan Ahmed</strong>
+
+                                        <p class="m-b-xs">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been
+                                        </p>
+                                        <small class="text-muted">Today 4:21 pm - 12.06.2014</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-form">
+                            <form role="form">
+                                <div class="form-group">
+                                    <textarea placeholder="Message" class="form-control"></textarea>
+                                </div>
+                                <div class="text-right">
+                                    <button class="btn btn-sm btn-primary m-t-n-xs" type="submit"><strong>Send
+                                        message</strong></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<aside id="chat" >
+    <ul role="tablist" class="tab-nav tn-justified" style="overflow: hidden;" tabindex="0">
+        <li class="active" role="presentation"><a data-toggle="tab" role="tab" aria-controls="friends" href="#friends"
+                                                  aria-expanded="true">Friends</a></li>
+        <li role="presentation" ><a data-toggle="tab" role="tab" aria-controls="online" href="#online"
+                                            aria-expanded="false">Online Now</a></li>
+    </ul>
+
+    <div class="chat-search">
+        <div class="fg-line">
+            <input type="text" placeholder="Search People" class="form-control" kl_virtual_keyboard_secure_input="on">
+        </div>
+    </div>
+
+    <div class="tab-content tab-content-chat">
+        <div id="friends" class="tab-pane fade active in" role="tabpanel">
+            <div class="listview chatListView">
+                <a href="" class="lv-item">
+                    <div class="media">
+                        <div class="pull-left p-relative">
+                            <img alt="" src="images/user/2.jpg" class="lv-img-sm">
+                            <i class="chat-status-busy"></i>
+                        </div>
+                        <div class="media-body">
+                            <div class="lv-title">Mohammad Ali</div>
+                            <small class="lv-small">Available</small>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="lv-item">
+                    <div class="media">
+                        <div class="pull-left">
+                            <img alt="" src="images/user/1.jpg" class="lv-img-sm">
+                        </div>
+                        <div class="media-body">
+                            <div class="lv-title">Sumon SD</div>
+                            <small class="lv-small">Last seen 3 hours ago</small>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="lv-item">
+                    <div class="media">
+                        <div class="pull-left p-relative">
+                            <img alt="" src="images/user/3.jpg" class="lv-img-sm">
+                            <i class="chat-status-online"></i>
+                        </div>
+                        <div class="media-body">
+                            <div class="lv-title">Hassan Sumon .</div>
+                            <small class="lv-small">Availble</small>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="lv-item">
+                    <div class="media">
+                        <div class="pull-left p-relative">
+                            <img alt="" src="images/user/4.jpg" class="lv-img-sm">
+                            <i class="chat-status-online"></i>
+                        </div>
+                        <div class="media-body">
+                            <div class="lv-title">Syed Nasim</div>
+                            <small class="lv-small">Availble</small>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="lv-item">
+                    <div class="media">
+                        <div class="pull-left">
+                            <img alt="" src="images/user/5.jpg" class="lv-img-sm">
+                        </div>
+                        <div class="media-body">
+                            <div class="lv-title">Bill Phillips</div>
+                            <small class="lv-small">Last seen 3 days ago</small>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="lv-item">
+                    <div class="media">
+                        <div class="pull-left">
+                            <img alt="" src="images/user/6.jpg" class="lv-img-sm">
+                        </div>
+                        <div class="media-body">
+                            <div class="lv-title">Wendy Mitchell</div>
+                            <small class="lv-small">Last seen 2 minutes ago</small>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="lv-item">
+                    <div class="media">
+                        <div class="pull-left p-relative">
+                            <img alt="" src="images/user/7.jpg" class="lv-img-sm">
+                            <i class="chat-status-busy"></i>
+                        </div>
+                        <div class="media-body">
+                            <div class="lv-title">Takeya Sowkat</div>
+                            <small class="lv-small">Busy</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="online" class="tab-pane fade" role="tabpanel">
+            <div class="listview chatListView">
+                <a href="" class="lv-item">
+                    <div class="media">
+                        <div class="pull-left p-relative">
+                            <img alt="" src="images/user/2.jpg" class="lv-img-sm">
+                            <i class="chat-status-busy"></i>
+                        </div>
+                        <div class="media-body">
+                            <div class="lv-title">Mohammad Ali</div>
+                            <small class="lv-small">Available</small>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="lv-item">
+                    <div class="media">
+                        <div class="pull-left p-relative">
+                            <img alt="" src="images/user/3.jpg" class="lv-img-sm">
+                            <i class="chat-status-online"></i>
+                        </div>
+                        <div class="media-body">
+                            <div class="lv-title">Hassan Sumon</div>
+                            <small class="lv-small">Availble</small>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="lv-item">
+                    <div class="media">
+                        <div class="pull-left p-relative">
+                            <img alt="" src="images/user/4.jpg" class="lv-img-sm">
+                            <i class="chat-status-online"></i>
+                        </div>
+                        <div class="media-body">
+                            <div class="lv-title">Syed Nasim</div>
+                            <small class="lv-small">Availble</small>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" class="lv-item">
+                    <div class="media">
+                        <div class="pull-left p-relative">
+                            <img alt="" src="images/user/7.jpg" class="lv-img-sm">
+                            <i class="chat-status-busy"></i>
+                        </div>
+                        <div class="media-body">
+                            <div class="lv-title">Takeya Sowkat</div>
+                            <small class="lv-small">Busy</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</aside>
+
+<div class="main-container page-container section-padd">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-2 col-xs-12 aside no-padding hidden-xs">
+                <aside class="side-menu">
+                    <!-- Main Menu -->
+                    <div class="side-menu-container">
+                        <ul class="nav navbar-nav">
+
+                            <li><a href="#">
+                                <span class="fa ">
+                                <img alt="user"
+                                     src="images/user/user.jpg"> </span>
+
+                                Jahirul Islam Tanim
+
+
+                            </a></li>
+                            <li><a href="#"><span class="fa fa-edit"></span> Edit Profile </a></li>
+                            <li class="divider"></li>
+                            <li class=" navbar-header"><a class="text-muted">FAVORITES</a></li>
+                            <li><a href="#"><span class="fa fa-newspaper-o"></span> News Feed</a></li>
+                            <li><a href="#"><span class="fa fa-envelope"></span> Messages</a></li>
+                            <li><a href="#"><span class="fa fa-calendar"></span> Events</a></li>
+                            <li><a href="#"><span class="fa fa-comments"></span> GROUPS</a></li>
+                            <li><a href="#"><span class="fa fa-bookmark"></span> Saved <span
+                                    class="label label-success ">16</span> </a></li>
+
+                            <!-- group-->
+                            <li class="divider"></li>
+                            <li class=" navbar-header"><a class="text-muted">GROUPS</a></li>
+                            <li><a href="#"><span class="glyphicon"><img alt="s"
+                                                                         src="https://fbstatic-a.akamaihd.net/rsrc.php/v2/yj/r/Nf4b8HrkOWM.png">
+                            </span> মুভি অ্যান্ড সিরিজ অ্যাডিক্টেড</a></li>
+                            <li><a href="#"><span class="fa"><img alt="s"
+                                                                  src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/v/t1.0-1/p24x24/67016_538012342937338_1603203374_n.png?oh=a80cbc069a2e14556a287cc31b47b93c&oe=56258CEB&__gda__=1445294303_3b42cd3d738bb3492659df41ceff2e8e">
+                            </span> Stamford EEE Association(SEEEA)</a></li>
+                            <li><a href="#"><span class="fa  fa-plus-square"></span> New Groups</a></li>
+                            <li><a href="#"><span class="fa  fa-pencil-square"></span> Create Group</a></li>
+
+                            <!-- Page -->
+                            <li class="divider"></li>
+                            <li class=" navbar-header"><a class="text-muted">PAGES</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-signal"></span> Pages Feed</a></li>
+                            <li><a href="#"><span class="glyphicon"><img alt="d"
+                                                                         src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/v/t1.0-1/p24x24/1380646_551412244928764_1474020356_n.png?oh=06ac96ff6cd423845791d411b08daded&oe=55E8FD2B&__gda__=1446132617_12f922c449d51c2301fd4e1b55d7519d">
+                            </span> ClothCycle.com</a></li>
+                            <li><a href="#"><span class="fa fa-envelope"></span> Like Pages</a></li>
+                            <li><a href="#"><span class="fa fa-pencil-square"></span> New Page</a></li>
+                            <li><a href="#"><span class="fa  fa-plus-square"></span> Create Page</a></li>
+                            <li><a href="#"><span class="fa  fa-bullhorn"></span> Promote Page</a></li>
+
+                            <!-- friends -->
+                            <li class="divider"></li>
+                            <li class=" navbar-header"><a class="text-muted">FRIENDS</a></li>
+                            <li><a href="#"><span class="fa fa-users"></span> All Friends</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-signal"></span> Close Friends</a></li>
+                            <li><a href="#"><span class="fa fa-envelope"></span> Family</a></li>
+
+
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+
+
+                </aside>
+            </div>
+
+            <div class="col-sm-6 col-xs-12 main-feed">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 ">
+                        <form class="facebook-share-box" enctype="multipart/form-data" role="form" method="post"
+                              action="#">
+                            <div class="share">
+                                <div class="arrow" style="left: 0px;"></div>
+                                <div class="panel panel-default panel-customs-post  panel-status">
+                                    <div class="panel-heading">
+
+                                        <ul class="post-types list-unstyled list-inline">
+                                            <li class="post-type active">
+                                                <a class="status" href="#"><i class="fa fa-file"></i> Update Status</a>
+                                            </li>
+                                            <li class="post-type">
+                                                <a class="photos" href="#"><i class="fa fa-camera"></i> Add photos</a>
+                                            </li>
+                                            <li class="post-type">
+                                                <a class="photos" href="#"><i class="fa fa-link"></i> Share Link</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="status-contnent">
+                                            <textarea placeholder="What's on your mind ?"
+                                                      style="height: 62px; overflow: hidden;"
+                                                      class="form-control message" id="status_message" rows="10"
+                                                      cols="40" name="message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="form-group icon-group">
+                                                    <button class="btn btn-default btn-icon" data-toggle="tooltip"
+                                                            data-placement="top" title="Add a Location" type="button"><i
+                                                            class="fa fa-map-marker"></i></button>
+                                                    <button class="btn btn-default btn-icon " data-toggle="tooltip"
+                                                            data-placement="top" title="Add a Photos" type="button"><i
+                                                            class="fa-camera fa"></i></button>
+                                                    <button class="btn btn-default btn-icon " data-toggle="tooltip"
+                                                            data-placement="top" title="Tag Friends" type="button"><i
+                                                            class="fa-user fa"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="row">
+
+                                                    <div class="form-group col-sm-6">
+                                                        <select class="form-control select privacy-dropdown"
+                                                                placeholder="Shared Public">
+                                                            <option value="Apple fritter">Public</option>
+                                                            <option value="Croissant">Friends</option>
+                                                            <option value="Donut">Only me</option>
+
+                                                        </select>
+
+                                                    </div>
+
+                                                    <div class=" col-sm-6">
+                                                        <input type="submit"
+                                                               class="btn btn-post btn-success pull-right no-margin" value="Post"
+                                                               name="submit">
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 ">
+                        <div class="panel panel-default  panel-customs-post">
+                            <div class="dropdown">
+                    <span class="dropdown-toggle" type="button" data-toggle="dropdown">
+                        <span class=" glyphicon glyphicon-chevron-down "></span>
+                    </span>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Edit Post </a>
+                                    </li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Add Location</a>
+                                    </li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Change Date</a>
+                                    </li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Turn off
+                                        notifications</a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hide from
+                                        Timeline</a></li>
+
+                                </ul>
+                            </div>
+
+                            <div class="panel-heading">
+                                <img class=" img-circle pull-left " src="images/user/user2.jpg" alt="Mouse0270">
+
+                                <h3>Hassan Sumon </h3>
+                                <h5><span>Shared publicly</span> - <span>Jun 27, 2014</span></h5>
+                            </div>
+                            <div class="panel-body">
+                                <p>Do people born in 2000 get to choose if they are Generation Y or Generation Z? How do
+                                    you decide what generation you want to belong to?</p>
+                            </div>
+                            <div class="panel-footer has-share-panel">
+
+                                <div class="row">
+
+                                    <div class="col-sm-12">
+
+                                        <div class="share-panel">
+                                            <a class="sp-like" href="#" title="#"><i class="fa fa-thumbs-up"></i> 26
+                                                likes</a>
+                                            <a class="sp-comments" href="#" title="#"><i class="fa fa-comments"></i> 14
+                                                comments</a>
+                                            <a class="sp-share" href="#" title="#"><i class="fa fa-share"></i> 10 shares</a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="panel-customs-post-comment">
+                                <img class="img-circle" src="images/user/default-user-picture.gif" alt="User Image">
+
+                                <div class="panel-customs-post-textarea">
+                                    <textarea rows="4"></textarea>
+                                    <button type="submit" class="btn btn-success disabled ">Post comment</button>
+                                    <button type="reset" class="btn  btn-default ">Cancel</button>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 ">
+                        <div class="panel panel-default  panel-customs-post">
+                            <div class="dropdown">
+                    <span class="dropdown-toggle" type="button" data-toggle="dropdown">
+                        <span class=" glyphicon glyphicon-chevron-down "></span>
+                    </span>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Edit Post </a>
+                                    </li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Add Location</a>
+                                    </li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Change Date</a>
+                                    </li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Turn off
+                                        notifications</a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hide from
+                                        Timeline</a></li>
+
+                                </ul>
+                            </div>
+
+                            <div class="panel-heading">
+                                <img class=" img-circle pull-left " src="images/user/m.jpg" alt="Mouse0270">
+
+                                <h3>ডনি ইয়েন </h3>
+                                <h5><span>Shared publicly</span> - <span>Jun 27, 2014</span></h5>
+                            </div>
+                            <div class="panel-body">
+
+                                <p>২০১৫'র ক্রিসমাসে আসিতেছে বহুল প্রতীক্ষিত এবং আকাঙ্খিত Donnie Yen ও Mike Tyson অভিনীত
+                                    Ip Man 3
+                                    sunglasses emoticon
+                                    হাইলি অ্যান্টিসিপেটেড এই এপিক একশন ট্রিলজি ফিনালের শুটিং শেষ হয়েছে গত মাসেই। এবং ডনি
+                                    ইয়েন নিজে কনফার্ম করেছেন এই মাসের শেষেই আসছে ট্রেইলার। তাহলে আর দেরি কেন! অপেক্ষার
+                                    প্রহর গুনতে শুরু করে দিন।
+                                    দ্য কাউন্টডাউন স্টার্টস নাউ
+                                    colonthree </p>
+
+                                <a href="" class="panel-customs-post-image">
+                                    <img src="images/group/1.jpg" alt="s" class="img-responsive">
+                                </a>
+                            </div>
+
+                            <div class="panel-bottom">
+                                <div class="panel-footer has-share-panel">
+
+                                    <div class="row">
+
+                                        <div class="col-sm-12">
+
+                                            <div class="share-panel">
+                                                <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                    likes</a>
+                                                <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i>
+                                                    14 comments</a>
+                                                <a title="#" href="#" class="sp-share"><i class="fa fa-share"></i> 10
+                                                    shares</a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="comments-box has-comments">
+
+                                    <div class="all-comments-count">
+                                        View 9 more comments
+                                    <span class="dropdown-toggle" type="button" data-toggle="dropdown">
+                                   <span class="glyphicon glyphicon-chevron-down"></span>
+                                   </span>
+                                    </div>
+
+                                    <div class="comments-list-wrapper">
+                                        <ul class="commentList">
+                                            <li>
+                                                <div class="commenterImage">
+                                                    <img src="https://lh3.googleusercontent.com/-ll1jsqW_tKI/AAAAAAAAAAI/AAAAAAAAFzk/sxT1miO22bs/s46-c-k-no/photo.jpg">
+                                                </div>
+                                                <div class="commentText">
+                                                    <p ><strong> <a href="user-profile.html"> Lamia Alonso </a>
+                                                    </strong> Hello this is a test comment.</p> <span
+                                                        class="date sub-text">on March 5th, 2015</span>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="commenterImage">
+                                                    <img src="https://lh3.googleusercontent.com/-A_v3UELYm34/AAAAAAAAAAI/AAAAAAAADOE/APCzKJPAP_8/s46-c-k-no/photo.jpg">
+                                                </div>
+                                                <div class="commentText">
+                                                    <p ><strong><a href="user-profile.html">Jaspreet Chahal</a>
+                                                    </strong> Hello this is a test comment and this comment is
+                                                        particularly
+                                                        very long and it goes on and on and on.</p> <span
+                                                        class="date sub-text">on March 5th, 2015</span>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="commenterImage">
+                                                    <img src="http://lorempixel.com/50/50/people/9">
+                                                </div>
+                                                <div class="commentText">
+                                                    <p ><strong> <a href="user-profile.html">Lisa Doll</a>
+                                                    </strong>
+                                                        Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2015</span>
+
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="input-placeholder">Add a comment...</div>
+
+
+                                </div>
+                                <div class="write-comments panel-customs-post-comment">
+                                    <img alt="User Image" src="images/user/default-user-picture.gif" class="img-circle">
+
+                                    <div class="panel-customs-post-textarea">
+                                        <textarea rows="4"></textarea>
+                                        <button class="btn btn-success disabled " type="submit">Post comment</button>
+                                        <button class="btn  btn-default " type="reset">Cancel</button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 ">
+                        <div class="panel panel-default panel-customs-post">
+                            <div class="dropdown">
+
+                            <span class="dropdown-toggle" type="button" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-chevron-down  "></span>
+                            </span>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                                        <div class="post-top-dropdown">
+                                            <div >Hide post</div>
+                                            <div class="text-muted">See fewer posts like this</div>
+                                        </div>
+                                    </a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                                        <div class="post-top-dropdown">
+                                            <div >Unfollow Regina</div>
+                                            <div class="text-muted">Stop seeing posts but stay friends</div>
+                                        </div>
+                                    </a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Turn on
+                                        notifications</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+
+                            <div class="panel-heading">
+                                <img class="img-circle pull-left  " src="images/user/user4.jpg" alt="user3">
+
+                                <h3>Regina Dealova <span class="text-muted ">with </span> <a class="_3rdUser">Akas
+                                    Islam</a>
+                                    <span class="text-muted ">and </span> <a class="_3rdUser">9 others</a>
+
+                                </h3>
+                                <h5><span>Shared publicly</span> - <span>Jun 15, 2016</span></h5>
+                            </div>
+                            <div class="panel-body">
+                                <p>হাজার বছর ধরে আমি পথ হাঁটিতেছি পৃথিবীর পথে, সিংহল সমুদ্র থেকে নিশীথের অন্ধকারে মালয়
+                                    সাগরে
+                                    অনেক ঘুরেছি আমি; বিম্বিসার অশোকের ধুসর জগতে সেখানে ছিলাম আমি; আরো দূর অন্ধকারে
+                                    বিদর্ভ
+                                    নগরে; আমি ক্লান্ত প্রাণ এক, চারিদিকে জীবনের সমুদ্র সফেন, আমারে দুদণ্ডশান্তি দিয়েছিল
+                                    নাটোরের
+                                    বনলতা সেন। চুল তার কবেকার অন্ধকার বিদিশার নিশা, মুখ তার শ্রাবস্তীর কারুকার্য; অতিদূর
+                                    সমুদ্রের’পর
+                                    হাল ভেঙে যে নাবিক হারায়েছে দিশা সবুজ ঘাসের দেশ যখন সে চোখে দেখে দারুচিনি-দ্বীপের
+                                    ভিতর, তেমনি
+                                    দেখেছি তারে অন্ধকারে; বলেছে সে, ‘এতদিন কোথায় ছিলেন?’ পাখির নীড়ের মতো চোখ তুলে
+                                    নাটোরের
+                                    বনলতা সেন। সমস্ত দিনের শেষে শিশিরের শব্দের মতন সন্ধা আসে; ডানার রৌদ্রের গন্ধ মুছে
+                                    ফেলে চিল;
+                                    পৃথিবীর সব রঙ নিভে গেলে পাণ্ডুলিপি করে আয়োজন তখন গল্পের তরে জোনাকির রঙে ঝিলমিল; সব
+                                    পাখি
+                                    ঘরে আসে-সব নদী-ফুরায় এ জীবনের সব লেনদেন; থাকে শুধু অন্ধকার, মুখোমুখি বসিবার বনলতা
+                                    সেন।
+                                </p>
+
+                            </div>
+                            <div class="panel-bottom">
+                                <div class="panel-footer has-share-panel">
+
+                                    <div class="row">
+
+                                        <div class="col-sm-12">
+
+                                            <div class="share-panel">
+                                                <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                    likes</a>
+                                                <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i>
+                                                    14 comments</a>
+                                                <a title="#" href="#" class="sp-share"><i class="fa fa-share"></i> 10
+                                                    shares</a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="comments-box has-comments">
+
+                                    <div class="all-comments-count">
+                                        View 9 more comments
+                                    <span class="dropdown-toggle" type="button" data-toggle="dropdown">
+                                   <span class="glyphicon glyphicon-chevron-down"></span>
+                                   </span>
+                                    </div>
+
+                                    <div class="comments-list-wrapper">
+                                        <ul class="commentList">
+                                            <li>
+                                                <div class="commenterImage">
+                                                    <img src="https://lh3.googleusercontent.com/-ll1jsqW_tKI/AAAAAAAAAAI/AAAAAAAAFzk/sxT1miO22bs/s46-c-k-no/photo.jpg">
+                                                </div>
+                                                <div class="commentText">
+                                                    <p ><strong> <a href="user-profile.html"> Lamia Alonso </a>
+                                                    </strong> Hello this is a test comment.</p> <span
+                                                        class="date sub-text">on March 5th, 2015</span>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="commenterImage">
+                                                    <img src="https://lh3.googleusercontent.com/-A_v3UELYm34/AAAAAAAAAAI/AAAAAAAADOE/APCzKJPAP_8/s46-c-k-no/photo.jpg">
+                                                </div>
+                                                <div class="commentText">
+                                                    <p ><strong><a href="user-profile.html">Jaspreet Chahal</a>
+                                                    </strong> Hello this is a test comment and this comment is
+                                                        particularly
+                                                        very long and it goes on and on and on.</p> <span
+                                                        class="date sub-text">on March 5th, 2015</span>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="commenterImage">
+                                                    <img src="http://lorempixel.com/50/50/people/9">
+                                                </div>
+                                                <div class="commentText">
+                                                    <p ><strong> <a href="user-profile.html">Lisa Doll</a>
+                                                    </strong>
+                                                        Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2015</span>
+
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="input-placeholder">Add a comment...</div>
+
+
+                                </div>
+                                <div class="write-comments panel-customs-post-comment">
+                                    <img alt="User Image" src="images/user/default-user-picture.gif" class="img-circle">
+
+                                    <div class="panel-customs-post-textarea">
+                                        <textarea rows="4"></textarea>
+                                        <button class="btn btn-success disabled " type="submit">Post comment</button>
+                                        <button class="btn  btn-default " type="reset">Cancel</button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 ">
+                        <div class="panel panel-default panel-customs-post ">
+                            <div class="dropdown">
+
+                            <span class="dropdown-toggle" type="button" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-chevron-down  "></span>
+                            </span>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                                        <div class="post-top-dropdown">
+                                            <div >Hide post</div>
+                                            <div class="text-muted">See fewer posts like this</div>
+                                        </div>
+                                    </a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                                        <div class="post-top-dropdown">
+                                            <div >Unfollow Regina</div>
+                                            <div class="text-muted">Stop seeing posts but stay friends</div>
+                                        </div>
+                                    </a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Turn on
+                                        notifications</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+
+                            <div class="panel-heading">
+                                <img class="img-circle pull-left  " src="images/user/user3.jpg" alt="user3">
+
+                                <h3>Regina Dealova <span class="text-muted ">added a new photo</span></h3>
+                                <h5><span>Shared publicly</span> - <span>Jun 15, 2016</span></h5>
+                            </div>
+                            <div class="panel-body">
+                                <p>কাভানিকে খোঁচা মারায় ৩ ম্যাচ নিষিদ্ধ হারা : <a href="pinterest.com">http://bangla.bdnews24.com/sport/article989759.bdnews</a>
+                                </p>
+                                <a class="panel-customs-post-image"
+                                   href="http://photos.bdnews24.com/media/2015/06/29/jara-1.jpg/ALTERNATES/w620/JARA+1.jpg">
+                                    <img src="http://photos.bdnews24.com/media/2015/06/29/jara-1.jpg/ALTERNATES/w620/JARA+1.jpg">
+                                </a>
+                            </div>
+                            <div class="panel-bottom">
+                                <div class="panel-footer has-share-panel">
+
+                                    <div class="row">
+
+                                        <div class="col-sm-12">
+
+                                            <div class="share-panel">
+                                                <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                    likes</a>
+                                                <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i>
+                                                    14 comments</a>
+                                                <a title="#" href="#" class="sp-share"><i class="fa fa-share"></i> 10
+                                                    shares</a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="comments-box has-comments">
+
+                                    <div class="all-comments-count">
+                                        View 9 more comments
+                                    <span class="dropdown-toggle" type="button" data-toggle="dropdown">
+                                   <span class="glyphicon glyphicon-chevron-down"></span>
+                                   </span>
+                                    </div>
+
+                                    <div class="comments-list-wrapper">
+                                        <ul class="commentList">
+                                            <li>
+                                                <div class="commenterImage">
+                                                    <img src="https://lh3.googleusercontent.com/-ll1jsqW_tKI/AAAAAAAAAAI/AAAAAAAAFzk/sxT1miO22bs/s46-c-k-no/photo.jpg">
+                                                </div>
+                                                <div class="commentText">
+                                                    <p ><strong> <a href="user-profile.html"> Lamia Alonso </a>
+                                                    </strong> Hello this is a test comment.</p> <span
+                                                        class="date sub-text">on March 5th, 2015</span>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="commenterImage">
+                                                    <img src="https://lh3.googleusercontent.com/-A_v3UELYm34/AAAAAAAAAAI/AAAAAAAADOE/APCzKJPAP_8/s46-c-k-no/photo.jpg">
+                                                </div>
+                                                <div class="commentText">
+                                                    <p ><strong><a href="user-profile.html">Jaspreet Chahal</a>
+                                                    </strong> Hello this is a test comment and this comment is
+                                                        particularly
+                                                        very long and it goes on and on and on.</p> <span
+                                                        class="date sub-text">on March 5th, 2015</span>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="commenterImage">
+                                                    <img src="http://lorempixel.com/50/50/people/9">
+                                                </div>
+                                                <div class="commentText">
+                                                    <p ><strong> <a href="user-profile.html">Lisa Doll</a>
+                                                    </strong>
+                                                        Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2015</span>
+
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="input-placeholder">Add a comment...</div>
+
+
+                                </div>
+                                <div class="write-comments panel-customs-post-comment">
+                                    <img alt="User Image" src="images/user/default-user-picture.gif" class="img-circle">
+
+                                    <div class="panel-customs-post-textarea">
+                                        <textarea rows="4"></textarea>
+                                        <button class="btn btn-success disabled " type="submit">Post comment</button>
+                                        <button class="btn  btn-default " type="reset">Cancel</button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 ">
+                        <div class="panel panel-default panel-customs-post ">
+                            <div class="dropdown">
+
+                            <span class="dropdown-toggle" type="button" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-chevron-down  "></span>
+                            </span>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                                        <div class="post-top-dropdown">
+                                            <div >Hide post</div>
+                                            <div class="text-muted">See fewer posts like this</div>
+                                        </div>
+                                    </a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                                        <div class="post-top-dropdown">
+                                            <div >Unfollow Regina</div>
+                                            <div class="text-muted">Stop seeing posts but stay friends</div>
+                                        </div>
+                                    </a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Turn on
+                                        notifications</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+
+                            <div class="panel-heading">
+                                <img class="img-circle pull-left  " src="images/user/user3.jpg" alt="user3">
+
+                                <h3>Regina Dealova <span class="text-muted ">added a new photo</span></h3>
+                                <h5><span>Shared publicly</span> - <span> Jun 15, 2016</span></h5>
+                            </div>
+                            <div class="panel-body">
+                                <p>কাভানিকে খোঁচা মারায় ৩ ম্যাচ নিষিদ্ধ হারা : <a href="pinterest.com">http://bangla.bdnews24.com/sport/article989759.bdnews</a>
+                                </p>
+
+                                <div class="panel-customs-post-image"
+                                     href="http://photos.bdnews24.com/media/2015/06/29/jara-1.jpg/ALTERNATES/w620/JARA+1.jpg">
+                                    <!-- 16:9 aspect ratio -->
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"
+                                                src="//www.youtube.com/embed/UYBhFprHUuA"></iframe>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="panel-bottom">
+                                <div class="panel-footer has-share-panel">
+
+                                    <div class="row">
+
+                                        <div class="col-sm-12">
+
+                                            <div class="share-panel">
+                                                <a title="#" href="#" class="sp-like"><i class="fa fa-thumbs-up"></i> 26
+                                                    likes</a>
+                                                <a title="#" href="#" class="sp-comments"><i class="fa fa-comments"></i>
+                                                    14 comments</a>
+                                                <a title="#" href="#" class="sp-share"><i class="fa fa-share"></i> 10
+                                                    shares</a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="comments-box has-comments">
+
+                                    <div class="all-comments-count">
+                                        View 9 more comments
+                                    <span class="dropdown-toggle" type="button" data-toggle="dropdown">
+                                   <span class="glyphicon glyphicon-chevron-down"></span>
+                                   </span>
+                                    </div>
+
+                                    <div class="comments-list-wrapper">
+                                        <ul class="commentList">
+                                            <li>
+                                                <div class="commenterImage">
+                                                    <img src="https://lh3.googleusercontent.com/-ll1jsqW_tKI/AAAAAAAAAAI/AAAAAAAAFzk/sxT1miO22bs/s46-c-k-no/photo.jpg">
+                                                </div>
+                                                <div class="commentText">
+                                                    <p ><strong> <a href="user-profile.html"> Lamia Alonso </a>
+                                                    </strong> Hello this is a test comment.</p> <span
+                                                        class="date sub-text">on March 5th, 2015</span>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="commenterImage">
+                                                    <img src="https://lh3.googleusercontent.com/-A_v3UELYm34/AAAAAAAAAAI/AAAAAAAADOE/APCzKJPAP_8/s46-c-k-no/photo.jpg">
+                                                </div>
+                                                <div class="commentText">
+                                                    <p ><strong><a href="user-profile.html">Jaspreet Chahal</a>
+                                                    </strong> Hello this is a test comment and this comment is
+                                                        particularly
+                                                        very long and it goes on and on and on.</p> <span
+                                                        class="date sub-text">on March 5th, 2015</span>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="commenterImage">
+                                                    <img src="http://lorempixel.com/50/50/people/9">
+                                                </div>
+                                                <div class="commentText">
+                                                    <p ><strong> <a href="user-profile.html">Lisa Doll</a>
+                                                    </strong>
+                                                        Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2015</span>
+
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="input-placeholder">Add a comment...</div>
+
+
+                                </div>
+                                <div class="write-comments panel-customs-post-comment">
+                                    <img alt="User Image" src="images/user/default-user-picture.gif" class="img-circle">
+
+                                    <div class="panel-customs-post-textarea">
+                                        <textarea rows="4"></textarea>
+                                        <button class="btn btn-success disabled " type="submit">Post comment</button>
+                                        <button class="btn  btn-default " type="reset">Cancel</button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 ">
+                        <div class="panel panel-default  panel-customs-post">
+                            <div class="dropdown">
+                    <span class="dropdown-toggle" type="button" data-toggle="dropdown">
+                        <span class=" glyphicon glyphicon-chevron-down "></span>
+                    </span>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Edit Post </a>
+                                    </li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Add Location</a>
+                                    </li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Change Date</a>
+                                    </li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Turn off
+                                        notifications</a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hide from
+                                        Timeline</a></li>
+
+                                </ul>
+                            </div>
+
+                            <div class="panel-heading">
+                                <img class=" img-circle pull-left " src="images/user/user2.jpg" alt="Mouse0270">
+
+                                <h3>Hassan Sumon </h3>
+                                <h5><span>Shared publicly</span> - <span>Jun 27, 2014</span></h5>
+                            </div>
+                            <div class="panel-body">
+                                <p>Do people born in 2000 get to choose if they are Generation Y or Generation Z? How do
+                                    you decide what generation you want to belong to?</p>
+                            </div>
+                            <div class="panel-footer">
+
+                                <div class="row">
+
+                                    <div class="col-sm-4">
+                                        <button type="button" class="btn btn-default btn-icon  " data-toggle="tooltip"
+                                                data-html="true" data-placement="top"
+                                                title="Tanizim Alam <br> Alam, <br> Ziku  Ahmed <br> 3 more"><i
+                                                class="fa fa-thumbs-up"></i> 5
+                                        </button>
+                                        <button type="button" class="btn btn-default btn-icon  ">
+                                            <span class="glyphicon glyphicon-share-alt  "></span>
+                                        </button>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="input-placeholder">Add a comment...</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="panel-customs-post-comment">
+                                <img class="img-circle" src="images/user/default-user-picture.gif" alt="User Image">
+
+                                <div class="panel-customs-post-textarea">
+                                    <textarea rows="4"></textarea>
+                                    <button type="submit" class="btn btn-success disabled ">Post comment</button>
+                                    <button type="reset" class="btn  btn-default ">Cancel</button>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 ">
+                        <div class="panel panel-default panel-customs-post">
+                            <div class="dropdown">
+
+                            <span class="dropdown-toggle" type="button" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-chevron-down  "></span>
+                            </span>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                                        <div class="post-top-dropdown">
+                                            <div >Hide post</div>
+                                            <div class="text-muted">See fewer posts like this</div>
+                                        </div>
+                                    </a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                                        <div class="post-top-dropdown">
+                                            <div >Unfollow Regina</div>
+                                            <div class="text-muted">Stop seeing posts but stay friends</div>
+                                        </div>
+                                    </a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Turn on
+                                        notifications</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+
+                            <div class="panel-heading">
+                                <img class="img-circle pull-left  " src="images/user/user3.jpg" alt="user3">
+
+                                <h3>Regina Dealova <span class="text-muted ">added a new photo</span></h3>
+                                <h5><span>Shared publicly</span> - <span>Jun 15, 2016</span></h5>
+                            </div>
+                            <div class="panel-body">
+                                <p>Just created a new snippet inspired by the Svbtle Menu. Find it here: <a
+                                        href="pinterest.com">pinterest.com/tanimahmed</a></p>
+                                <a class="panel-customs-post-image"
+                                   href="https://scontent-sin1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/409597_3473290399063_2041104051_n.jpg?oh=059b9d4a4f9d5d048de657d27c4e16cd&oe=56177F87">
+                                    <img src="https://scontent-sin1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/409597_3473290399063_2041104051_n.jpg?oh=059b9d4a4f9d5d048de657d27c4e16cd&oe=56177F87">
+                                </a>
+                            </div>
+                            <div class="panel-footer">
+
+                                <div class="row">
+
+                                    <div class="col-sm-4">
+                                        <button type="button" class="btn btn-default btn-icon  " data-toggle="tooltip"
+                                                data-html="true" data-placement="top"
+                                                title="Tanizim Alam <br> Alam, <br> Ziku  Ahmed <br> 3 more"><i
+                                                class="fa fa-thumbs-up"></i> 5
+                                        </button>
+                                        <button type="button" class="btn btn-default btn-icon  ">
+                                            <span class="glyphicon glyphicon-share-alt  "></span>
+                                        </button>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="input-placeholder">Add a comment...</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="panel-customs-post-comment">
+                                <img class="img-circle" src="images/user/default-user-picture.gif" alt="User Image">
+
+                                <div class="panel-customs-post-textarea">
+                                    <textarea rows="4"></textarea>
+                                    <button type="submit" class="btn btn-success disabled  ">Post comment</button>
+                                    <button type="reset" class="btn btn-default  ">Cancel</button>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.main-feed-->
+            <div class="col-sm-3 col-xs-12 rightCol no-padding">
+                <aside>
+                    <div class="panel hide panel-default panel-right">
+                        <div class="panel-heading text-center">
+                            <div class="panel-title "><i class="fa fa-bullhorn"></i> NOTICE BOARD</div>
+
+                        </div>
+
+                        <div class="panel-body no-padding">
+
+                            <div id="carousel-example-generic" class="carousel slide carousel-notice"
+                                 data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner " role="listbox">
+                                    <div class="item active">
+                                        <a href="notice-details.html"><img src="images/notice/1.jpg" alt="..."></a>
+
+                                        <div class="carousel-caption">
+                                            <h4> শেখ মুজিবুর রহমান </h4>
+
+                                            <div class="sub-notice">
+                                                <small>1st President of Bangladesh<br>
+                                                    11 April 1971 – 12 January 1972
+                                                </small>
+                                                <div style="clear:both;"></div>
+                                                <a target="_blank" href="notice-details.html" class="btn btn-danger btn-sm">View details </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item ">
+                                        <a href="notice-details.html"> <img src="images/notice/2.jpg" alt="..."> </a>
+
+                                        <div class="carousel-caption">
+                                            <h4> Mahatma Gandhi </h4>
+
+                                            <div class="sub-notice">
+                                                <small><b>Born</b> 2 October 1869<br>
+                                                    <b>Died</b> 30 January 1948
+                                                </small>
+                                                <div style="clear:both;"></div>
+                                                <a class="btn btn-danger btn-sm">View details </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item ">
+                                        <a href="notice-details.html"> <img src="images/notice/1.jpg" alt="..."> </a>
+
+                                        <div class="carousel-caption">
+                                            <h4> Mahatma Gandhi </h4>
+
+                                            <div class="sub-notice">
+                                                <small><b>Born</b> 2 October 1869<br>
+                                                    <b>Died</b> 30 January 1948
+                                                </small>
+                                                <div style="clear:both;"></div>
+                                                <a class="btn btn-danger btn-sm">View details </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#carousel-example-generic" role="button"
+                                   data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" role="button"
+                                   data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="panel panel-default   panel-news">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-list-alt"></span> Recent News </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-12 no-padding">
+
+
+                                    <ul class="news-slider hasNews list-unstyled">
+                                        <li class="news-item">
+                                            <div class="news-item-inner">
+                                            <a title="#" href="#">
+                                                <i class="mdi-navigation-chevron-right arrow"></i>
+                                                <div class="image">
+                                                    <img width="81" height="66" alt="#" src="images/news/1.png">
+                                                </div>
+
+                                                দুর্বৃত্তের হামলা পর পুলিশি ধাওয়ায় সরল শিক্ষার্থীরা
+
+                                                <span class="info">সেপ্টেম্বর ১০, ২০১৫</span>
+                                            </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="news-item">
+                                            <div class="news-item-inner">
+                                                <a title="#" href="#">
+                                                    <i class="mdi-navigation-chevron-right arrow"></i>
+                                                    <div class="image">
+                                                        <img width="81" height="66" alt="#" src="images/news/2.png">
+                                                    </div>
+
+
+                                                    রোনালদোর দাম ৯ হাজার কোটি টাকা!
+
+
+                                                    <span class="info">সেপ্টেম্বর ১০, ২০১৫</span>
+                                                </a>
+                                            </div>
+                                        </li>
+
+
+                                        <li class="news-item">
+                                            <div class="news-item-inner">
+                                                <a title="#" href="#">
+                                                    <i class="mdi-navigation-chevron-right arrow"></i>
+                                                    <div class="image">
+                                                        <img width="81" height="66" alt="#" src="images/news/1.png">
+                                                    </div>
+
+                                                    দুর্বৃত্তের হামলা পর পুলিশি ধাওয়ায় সরল শিক্ষার্থীরা
+
+                                                    <span class="info">সেপ্টেম্বর ১০, ২০১৫</span>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="news-item">
+                                            <div class="news-item-inner">
+                                                <a class="has-image-full" title="#" href="#">
+
+                                                    <div class="image ">
+                                                        <img class="img-responsive"  src="images/news/2.jpg">
+                                                    </div>
+
+                                                    <span class="info">সেপ্টেম্বর ১০, ২০১৫</span>
+
+                                                </a>
+                                            </div>
+                                        </li>
+
+
+                                        <li class="news-item ">
+                                        <div class="news-item-inner">
+                                            <a title="#" href="#" class="has-only-text">
+                                                <i class="mdi-navigation-chevron-right arrow"></i>
+
+                                                ১৯৯৯ বিশ্বকাপ <strong>বাংলাদেশের</strong>  ক্রিকেটের জন্য স্মরণীয় হয়ে আছে। পাকিস্তানের বিপক্ষে
+                                                ঐতিহাসিক এক জয় এ​ দেশের ক্রিকেটের
+                                                ছবিটাই ভবিষ্যতের জন্য পাল্টে দিয়েছিল।
+
+                                                <span class="info">সেপ্টেম্বর ১০, ২০১৫</span>
+
+                                            </a>
+                                        </div>
+                                    </li>
+
+
+                                        <li class="news-item">
+                                            <div class="news-item-inner">
+                                                <a title="#" href="#">
+                                                    <i class="mdi-navigation-chevron-right arrow"></i>
+                                                    <div class="image">
+                                                        <img width="81" height="66" alt="#" src="images/news/1.png">
+                                                    </div>
+
+                                                    দুর্বৃত্তের হামলা পর পুলিশি ধাওয়ায় সরল শিক্ষার্থীরা
+
+                                                    <span class="info">সেপ্টেম্বর ১০, ২০১৫</span>
+                                                </a>
+                                            </div>
+                                        </li>
+
+
+                                        <li class="news-item">
+                                            <div class="news-item-inner">
+                                                <a title="#" href="#">
+                                                    <i class="mdi-navigation-chevron-right arrow"></i>
+                                                    <div class="image">
+                                                        <img width="81" height="66" alt="#" src="images/news/1.png">
+                                                    </div>
+
+                                                    দুর্বৃত্তের হামলা পর পুলিশি ধাওয়ায় সরল শিক্ষার্থীরা
+
+                                                    <span class="info">সেপ্টেম্বর ১০, ২০১৫</span>
+                                                </a>
+                                            </div>
+                                        </li>
+
+
+                                        <li class="news-item">
+                                            <div class="news-item-inner">
+                                                <a title="#" href="#">
+                                                    <i class="mdi-navigation-chevron-right arrow"></i>
+                                                    <div class="image">
+                                                        <img width="81" height="66" alt="#" src="images/news/1.png">
+                                                    </div>
+
+                                                    দুর্বৃত্তের হামলা পর পুলিশি ধাওয়ায় সরল শিক্ষার্থীরা
+
+                                                    <span class="info">সেপ্টেম্বর ১০, ২০১৫</span>
+                                                </a>
+                                            </div>
+                                        </li>
+
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default panel-live-feed">
+                        <div class="panel-heading">
+
+                            <div class="panel-title"><i class="fa fa-life-saver"></i> Live Feed</div>
+                        </div>
+
+
+                        <div class="panel-body no-padding-tb">
+                            <div class="row">
+                                <div class="col-xs-12 no-padding">
+
+
+                                    <ul class="livefeed-slider hasNews list-unstyled list-group latest-user-group  has-friend-list">
+                                        <li class="news-item list-group-item">
+
+                            <!-- START list group item-->
+                            <a href="javascript:void(0);" >
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img src="images/user/user.jpg" alt="Image"
+                                             class="media-object img-circle thumb48">
+                                    </div>
+                                    <div class="media-body ">
+                                        <small class="pull-right "><span > 2h ago </span></small>
+                                        <strong>Regina Dealova </strong> added a new photo with <strong>Atik
+                                        Ahmed</strong>. <br>
+                                        <small class="text-muted">2 days ago at 8:30am</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- END list group item-->
+                                            </li>
+                                        <li class="news-item list-group-item">
+
+                            <!-- START list group item-->
+                            <a href="javascript:void(0);" >
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img src="images/user/user2.jpg" alt="Image"
+                                             class="media-object img-circle thumb48">
+                                    </div>
+                                    <div class="media-body clearfix">
+
+                                        <div class="media-body ">
+                                            <small class="pull-right "><span > 2h ago </span></small>
+                                            <strong>Tanim Ahmed</strong> posted message on <strong>Paulk</strong> page.
+                                            <br>
+                                            <small class="text-muted">Today 2:10 pm - 12.06.2014</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- END list group item-->
+                                        </li>
+                                        <li class="news-item list-group-item">
+
+                            <!-- START list group item-->
+                            <a href="javascript:void(0);" >
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img src="images/page/4.jpg" alt="Image"
+                                             class="media-object img-circle thumb48">
+                                    </div>
+                                    <div class="media-body clearfix">
+
+                                        <div class="media-body ">
+                                            <small class="pull-right "><span > 2h ago </span></small>
+                                            <strong>Tanim Ahmed</strong> posted message on <strong>Paulk</strong> page.
+                                            <br>
+                                            <small class="text-muted">Today 2:10 pm - 12.06.2014</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- END list group item-->
+                                        </li>
+                                        <li class="news-item list-group-item">
+
+                            <!-- START list group item-->
+                            <a href="javascript:void(0);" >
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img src="images/user/user4.jpg" alt="Image"
+                                             class="media-object img-circle thumb48">
+                                    </div>
+                                    <div class="media-body clearfix">
+
+                                        <div class="media-body ">
+                                            <small class="pull-right "><span > 2h ago </span></small>
+                                            <strong>Anik Bhowmik </strong> posted in 2 groups. <br>
+                                            <small class="text-muted">Today 2:10 pm - 12.06.2014</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- END list group item-->
+
+                                        </li>
+                                        <li class="news-item list-group-item">
+                            <!-- START list group item-->
+                            <a href="javascript:void(0);" class="">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img src="images/page/5.png" alt="Image"
+                                             class="media-object img-circle thumb48">
+                                    </div>
+                                    <div class="media-body clearfix">
+
+                                        <div class="media-body ">
+                                            <small class="pull-right "><span > 23 hrs  </span></small>
+                                            <strong>Azim Uddin </strong> changed his profile picture <br>
+                                            <small class="text-muted">Today at 9:37am</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- END list group item-->
+                                        </li>
+                                      </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+
+                    <div class="panel panel-default panel-latest-user">
+                        <div class="panel-heading">
+
+                            <div class="panel-title">Latest User</div>
+                        </div>
+                        <!-- START list group-->
+                        <div class="list-group latest-user-group">
+                            <!-- START list group item-->
+                            <a class="list-group-item" href="javascript:void(0);">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="media-object img-circle thumb48" alt="Image"
+                                             src="images/user/user.jpg">
+                                    </div>
+                                    <div class="media-body clearfix">
+                                        <small class="pull-right "><span class="btn btn-sm btn-danger"><i
+                                                class="fa fa-user-plus"></i> Add </span></small>
+                                        <strong class="media-heading text-primary">
+                                            <span class="circle circle-success circle-lg text-left"></span>Shoeb
+                                            Khan</strong>
+
+                                        <p class="mb-sm">
+                                            <small>1h ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- END list group item-->
+                            <!-- START list group item-->
+                            <a class="list-group-item" href="javascript:void(0);">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="media-object img-circle thumb48" alt="Image"
+                                             src="images/user/user2.jpg">
+                                    </div>
+                                    <div class="media-body clearfix">
+
+                                        <small class="pull-right "><span class="btn btn-sm btn-danger"><i
+                                                class="fa fa-user-plus"></i> Add </span></small>
+
+                                        <strong class="media-heading text-primary">
+                                            <span class="circle circle-success circle-lg text-left"></span>Kothopo
+                                            Kothon</strong>
+
+                                        <p class="mb-sm">
+                                            <small>3h ago.</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- END list group item-->
+                            <!-- START list group item-->
+                            <a class="list-group-item" href="javascript:void(0);">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="media-object img-circle thumb48" alt="Image"
+                                             src="images/user/user4.jpg">
+                                    </div>
+                                    <div class="media-body clearfix">
+                                        <small class="pull-right "><span class="btn btn-sm btn-danger"><i
+                                                class="fa fa-user-plus"></i> Add </span></small>
+                                        <strong class="media-heading text-primary">
+                                            <span class="circle circle-danger circle-lg text-left"></span>আধারের শুকতারা</strong>
+
+                                        <p class="mb-sm">
+                                            <small>1 days ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- END list group item-->
+                            <!-- START list group item-->
+                            <a class="list-group-item" href="javascript:void(0);">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="media-object img-circle thumb48" alt="Image"
+                                             src="images/user/user3.jpg">
+                                    </div>
+                                    <div class="media-body clearfix">
+
+                                        <small class="pull-right "><span class="btn btn-sm btn-danger"><i
+                                                class="fa fa-user-plus"></i> Add </span></small>
+
+                                        <strong class="media-heading text-primary">
+                                            <span class="circle circle-danger circle-lg text-left"></span>Ahsan Habib
+                                            Prince s</strong>
+
+                                        <p class="mb-sm">
+                                            <small>2 days ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- END list group item-->
+                            <!-- START list group item-->
+                            <a class="list-group-item" href="javascript:void(0);">
+                                <div class="media">
+                                    <div class="pull-left">
+                                        <img class="media-object img-circle thumb48" alt="Image"
+                                             src="images/user/user2.jpg">
+                                    </div>
+                                    <div class="media-body clearfix">
+                                        <small class="pull-right "><span class="btn btn-sm btn-danger"><i
+                                                class="fa fa-user-plus"></i> Add </span></small>
+                                        <strong class="media-heading text-primary">
+                                            <span class="circle circle-lg text-left"></span>Selim Al Hasan</strong>
+
+                                        <p class="mb-sm">
+                                            <small>2 days ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- END list group item-->
+                        </div>
+                        <!-- END list group-->
+                        <!-- START panel footer-->
+                        <div class="panel-footer clearfix">
+                            <div class="input-group">
+                                <input type="text" class="form-control input-sm" placeholder="Search user ..">
+                                 <span class="input-group-btn">
+                                    <button class="btn btn-default btn-sm" type="submit"><i class="fa fa-search"></i>
+                                    </button>
+                                 </span>
+                            </div>
+                        </div>
+                        <!-- END panel-footer-->
+                    </div>
+
+
+                    <div class="panel panel-default  panel-customs-post">
+                        <div class="panel-body text-center no-padding">
+                            <img src="images/ads/1.gif" alt="s" class="img-responsive">
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default  panel-customs-post">
+                        <div class="panel-body text-center">
+                            <p><br> <br> <br> ads <br> <br><br></p>
+                        </div>
+                    </div>
+
+
+                </aside>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<footer>
+    <div class="footer-bottom">
+        <div class="container text-center">
+            <p class="pull-left hide">
+                Copyright © 2015 dostums Inc. All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/material/dropdownjs/jquery.dropdown.js"></script>
+<script src="assets/material/js/ripples.min.js"></script>
+<script src="assets/material/js/material.min.js"></script>
+<script src="assets/js/jquery.scrollto.js"></script>
+<script src="assets/js/jquery.easing.1.3.js"></script>
+<script src="assets/js/wow.min.js"></script>
+    <script type="text/javascript">
+    $(function () {
+
+        $(".livefeed-slider").bootstrapNews({
+        newsPerPage: 4,
+        autoplay: true,
+        navigation: false,
+        pauseOnHover:true,
+        direction: 'up',
+        newsTickerInterval: 2500,
+        onToDo: function () {
+            //console.log(this);
+        }
+
+
+    });
+        $(".news-slider").bootstrapNews({
+            newsPerPage: 4,
+            autoplay: false,
+            navigation: true,
+            pauseOnHover:true,
+            direction: 'down',
+            newsTickerInterval: 4000,
+            onToDo: function () {
+                //console.log(this);
+            }
+
+          //  newsPerPage: 4,
+          //  navigation: true,
+           // autoplay: true,
+          //  direction:'up',
+          //  animationSpeed: 'normal',
+         //   newsTickerInterval: 4000, //4 secs
+           // pauseOnHover: true,
+         //   onStop: null,
+          //  onPause: null,
+          //  onReset: null,
+         //   onPrev: null,
+         //   onNext: null,
+         //   onToDo: null*/
+        });
+
+
+    });
+
+
+</script>
+
+<script src="assets/js/script.js"></script>
+<script src="assets/js/chat.js"></script>
+
+</body>
+</html>

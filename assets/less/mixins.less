@@ -1,0 +1,189 @@
+/* Mixin */
+
+// Border Radius 
+
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+/* Implementation */
+#div {
+  .border-radius(20px);
+}
+
+.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
+  -webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+  -moz-border-radius: @topleft @topright @bottomright @bottomleft;
+  border-radius: @topleft @topright @bottomright @bottomleft;
+}
+
+/* Implementation */
+#div {
+  .border-radius-custom(20px, 20px, 0px, 0px);
+}
+
+// BOX SHADOW 
+
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+  -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+  box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+/* Implementation */
+#div {
+  .box-shadow(5px, 5px, 6px, 0.3);
+}
+
+// TRANSITION 
+
+.transition (@prop: all, @time: 1s, @ease: linear) {
+  -webkit-transition: @prop @time @ease;
+  -moz-transition: @prop @time @ease;
+  -o-transition: @prop @time @ease;
+  -ms-transition: @prop @time @ease;
+  transition: @prop @time @ease;
+}
+
+/* Implementation */
+.transition-all {
+  .transition(all, 0.25s, linear);
+}
+
+#div:hover {
+  opacity: 0;
+}
+
+// TRANSFORM 
+
+.transform (@rotate: 90deg, @scale: 1, @skew: 1deg, @translate: 10px) {
+  -webkit-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+  -moz-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+  -o-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+  -ms-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+  transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+}
+
+/* Implementation */
+#div {
+  .transform(5deg, 0.5, 1deg, 0px);
+  .transform(5deg, 0.5, 1deg, 0px);
+}
+
+// GRADIENT 
+
+.gradient (@origin: left, @start: #ffffff, @stop: #000000) {
+  background-color: @start;
+  background-image: -webkit-linear-gradient(@origin, @start, @stop);
+  background-image: -moz-linear-gradient(@origin, @start, @stop);
+  background-image: -o-linear-gradient(@origin, @start, @stop);
+  background-image: -ms-linear-gradient(@origin, @start, @stop);
+  background-image: linear-gradient(@origin, @start, @stop);
+}
+
+.gradient0 (@origin: left, @start: #ffffff, @stop: #000000) {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(@origin, @start, @stop);
+  background-image: -moz-linear-gradient(@origin, @start, @stop);
+  background-image: -o-linear-gradient(@origin, @start, @stop);
+  background-image: -ms-linear-gradient(@origin, @start, @stop);
+  background-image: linear-gradient(@origin, @start, @stop);
+}
+
+/* gradient Implementation */
+#div {
+  .gradient(left, #663333, #333333);
+}
+
+// QUICK GRADIENT 
+
+.quick-gradient (@origin: left, @alpha: 0.2) {
+  background-image: -webkit-linear-gradient(@origin, rgba(0, 0, 0, 0.0), rgba(0, 0, 0,@alpha));
+  background-image: -moz-linear-gradient(@origin, rgba(0, 0, 0, 0.0), rgba(0, 0, 0,@alpha));
+  background-image: -o-linear-gradient(@origin, rgba(0, 0, 0, 0.0), rgba(0, 0, 0,@alpha));
+  background-image: -ms-linear-gradient(@origin, rgba(0, 0, 0, 0.0), rgba(0, 0, 0,@alpha));
+  background-image: linear-gradient(@origin, rgba(0, 0, 0, 0.0), rgba(0, 0, 0,@alpha));
+}
+
+/* Implementation */
+#div {
+  background-color: #BADA55;
+  .quick-gradient(top, 0.2);
+}
+
+// OPACITY
+
+.crossbrowseropacity (@color,@alpha) {
+  @rgba: rgba(red(@color), green(@color), blue(@color),@alpha);
+  @argb: argb(@rgba);
+  background-color: @color;
+  background-color: @rgba;
+  filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{argb}, endColorstr=@{argb})";
+  -ms-filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{argb}, endColorstr=@{argb})";
+}
+
+#div {
+  .crossbrowseropacity (red, .2)
+}
+
+/*Color Math*/
+
+// COLOR SCHEME
+
+@base: #B1B0B8;
+@complement1: spin(@base, 180);
+@complement2: darken(spin(@base, 180), 5%);
+@lighten1: lighten(@base, 15%);
+@lighten2: lighten(@base, 30%);
+
+/* Implementation */
+.one {
+  color: @base;
+}
+
+.two {
+  color: @complement1;
+}
+
+.three {
+  color: @complement2;
+}
+
+.four {
+  color: @lighten1;
+}
+
+.five {
+  color: @lighten2;
+}
+
+//  SUBTLE COLOR SCHEME
+
+@base: #B1B0B8;
+@lighter1s: lighten(spin(@base, 5), 10%);
+@lighter2s: lighten(spin(@base, 10), 20%);
+@darker1s: darken(spin(@base, -5), 10%);
+@darker2s: darken(spin(@base, -10), 20%);
+
+/* Implementation */
+.base-color {
+  color: @base;
+}
+
+.base-lighter {
+  color: @lighter1s;
+}
+
+.base-lighter2 {
+  color: @lighter2s;
+}
+
+.base-darker {
+  color: @darker1s;
+}
+
+.base-darker2 {
+  color: @darker2s;
+}

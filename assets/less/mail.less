@@ -1,0 +1,256 @@
+.mail-chat {
+  border-left: 1px solid #dddddd;
+  margin-left: -1px;
+  .title {
+    background: #ffffff none repeat scroll 0 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    min-height: 79px;
+    padding: 12px 20px;
+    position: relative;
+    h1 {
+      font-size: 19px;
+      margin: 0;
+    }
+    .btn-group {
+      bottom: 20px;
+      position: absolute;
+      right: 20px;
+    }
+  }
+  .conv {
+    background: #ffffff none repeat scroll 0 0;
+    margin-bottom: 0;
+    padding: 20px;
+    max-height: 450px;
+    overflow-y: auto;
+    li {
+      display: block;
+      margin-bottom: 20px;
+      padding-left: 70px;
+      position: relative;
+    }
+    .img {
+      border-radius: 999px;
+      height: 50px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 50px;
+    }
+    .ballon {
+      border-radius: 20px;
+      display: inline-table;
+      margin-bottom: 14px;
+      padding: 14px 20px;
+    }
+    .color1 {
+      background: #b9f98e none repeat scroll 0 0;
+      color: #0a451d;
+    }
+    .color2 {
+      background: #b6deff none repeat scroll 0 0;
+      color: #153440;
+    }
+    .addition {
+      background: #f2f2f2 none repeat scroll 0 0;
+      border: 1px dashed #cccccc;
+      border-radius: 20px;
+      display: inline-block;
+      font-size: 12px;
+      padding: 5px 20px;
+      a {
+        text-decoration: underline;
+      }
+      .fa {
+        font-size: 14px;
+        margin-right: 6px;
+      }
+    }
+    .date {
+      border-bottom: 1px solid #f2f2f2;
+      border-top: 1px solid #f2f2f2;
+      font-size: 11px;
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+}
+
+.write {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+
+  .panel-customs-post-textarea {
+    background: #fff;
+    padding: 15px;
+    textarea {
+      width: 100%;
+      background: #E8ECED;
+      padding: 15px;
+    }
+  }
+
+}
+
+//Mailbox left
+
+.mailbox-menu {
+  background: #ffffff none repeat scroll 0 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  position: relative;
+  .menu {
+    margin-bottom: 0;
+    padding: 11px 0;
+    li {
+      border-right: 1px solid rgba(0, 0, 0, 0.08);
+      color: #76747a;
+      display: inline;
+      font-size: 13px;
+      padding: 16px 0;
+      .fa {
+        color: #666666;
+        font-size: 16px;
+        margin-right: 5px;
+      }
+      a {
+        border-radius: 3px;
+        color: #76747a;
+        padding: 15px 19px;
+      }
+      a:hover {
+        color: #333333;
+        .fa {
+          color: #333333;
+        }
+      }
+    }
+    li:last-child {
+      margin-left: -1px;
+    }
+  }
+}
+
+.mailbox-inbox {
+  max-height: 665px;
+  overflow-y: auto;
+  background: #ffffff none repeat scroll 0 0;
+  border-right: 1px solid #dddddd;
+  color: #76747a;
+  left: 0;
+  padding: 0;
+  top: 0;
+  li {
+    display: block;
+  }
+  .item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    color: #76747a;
+    display: block;
+    font-size: 12px;
+    padding: 20px;
+    position: relative;
+  }
+  .item:hover {
+    background: #e3f2ff none repeat scroll 0 0;
+    .from {
+      color: #37363e;
+    }
+  }
+  .img {
+    border-radius: 999px;
+    float: left;
+    height: 40px;
+    margin-right: 10px;
+    width: 40px;
+  }
+  .from {
+    color: #333333;
+    display: block;
+    font-size: 13px;
+  }
+  .date {
+    font-size: 10px;
+    opacity: 0.7;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+}
+
+.chat-user-search {
+  background: #fff;
+
+  .search {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 23px 20px;
+    position: relative;
+  }
+  .mailbox-search {
+    background: rgba(0, 0, 0, 0.07) none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 999px;
+    color: #333333;
+    height: 32px;
+    padding-left: 20px;
+    padding-right: 36px;
+    width: 100%;
+  }
+  .mailbox-search:focus {
+    background: rgba(0, 0, 0, 0.12) none repeat scroll 0 0;
+    border-top: medium none;
+    box-shadow: none;
+  }
+  .searchbutton {
+    right: 35px;
+    top: 27px;
+    position: absolute;
+  }
+
+}
+
+.list-group.mail-list {
+
+  a.list-group-item  {
+    color: #4c4c4c;
+    display: block;
+    font-weight: 500;
+    padding: 14px 20px 14px 15px;
+    position: relative;
+
+    i {
+      display: inline;
+      padding-right: 15px;
+      width: 14px;
+    }
+
+    &.active {
+
+      background-color: #f4f4f4;
+      color: #262626;
+
+    }
+  }
+
+
+
+  }
+
+.mt0 {
+  margin-top: 0 !important;
+}
+
+.page-title {
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  .sub-text {
+  font-size: 12px;
+    color: #666666;
+    font-weight: normal;
+    margin-bottom: 0;
+    padding-left: 10px;
+    text-transform: inherit;
+  }
+}

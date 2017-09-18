@@ -1,0 +1,98 @@
+.mikes-modal {
+    background-color: white;
+    display: none;
+    left: 50%;
+    position: fixed;
+    top: 30%;
+    margin-top: -10% !important;
+    z-index: 10001;
+}
+
+.mikes-modal a {
+    text-decoration: none;
+}
+
+.mikes-modal img {
+    float: left;
+}
+
+.mikes-modal .description {
+    width: 300px;
+    float: right;
+    text-align: left;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.mikes-modal .close {
+    background: white;
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    line-height: 1;
+    opacity: 1;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#loading-modal {
+    position: absolute;
+    z-index: 10000;
+    width: 220px;
+    height: 220px;
+    top: 50%;
+    left: 50%;
+    margin-top: -110px;
+    margin-left: -110px;
+    background-color: #333;
+    border-radius: 20px;
+}
+
+#the-lights {
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+@media all and (max-width: 700px) {
+    .mikes-modal {
+        left: 0%;
+        margin-left: 0px !important;
+        position: absolute;
+    }
+
+    .mikes-modal .description {
+        clear: both;
+        width: 95% !important;
+        float: left;
+        padding: 2.5%;
+        background-color: white;
+    }
+
+    .mikes-modal .close {
+        color: white;
+        top: 0px;
+    }
+
+    .mikes-modal img {
+        max-width: 100% !important;
+        max-height: 100% !important;
+    }
+
+    .mikes-modal #comments {
+        margin-top: 20px;
+    }
+
+    #comments-area .new-comment {
+        position: inherit;
+        width: 100%;
+        background-color: black;
+    }
+}
